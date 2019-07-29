@@ -11,7 +11,8 @@ require 'faker'
 10.times do
     name = Faker::FunnyName.name
     User.create(
-      name: name
+      name: name,
+      score: 0
     )
   end
 
