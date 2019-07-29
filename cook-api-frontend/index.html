@@ -4,11 +4,18 @@
     <meta charset="utf-8">
     <title>Kevin likes to cook</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header id="main-header">
-        <h2>Cooking App</h2>
+    <header>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">High Score</a>
+            <a href="#">My Dishes</a>
+            <a href="#">Log out</a>
+          </div>
+          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          <img id="header-img" src="http://is5.mzstatic.com/image/thumb/Purple5/v4/ae/60/53/ae6053d4-c0c6-7721-4554-ea99fb964131/source/750x750bb.jpeg">
     </header>
 
     <main id="main-wrapper">
