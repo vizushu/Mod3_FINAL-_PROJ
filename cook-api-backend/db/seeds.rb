@@ -14,29 +14,27 @@ require 'faker'
       name: name,
       score: 0
     )
-  end
-
-10.times do
-    name = Faker::Food.ingredient
-    Ingredient.create(
-      name: name
-    )
-    end
-
-10.times do
-    name = Faker::Food.dish
-    points = (12..60).to_a.sample
-    Recipe.create(
-    name: name,
-    points: points
-    )
 end
 
+ingredients = [
 
+]
 
+ingredient_collection = []
 
+ingredients.each do |name|
+  ingredient_collection << Ingredient.create(name: name)
+end
 
+recipes = [
 
+]
+
+recipe_collection = []
+
+recipes.each do |name|
+  recipe_collection << Ingredient.create(name: name)
+end
 
 # Level 1
 # Tea: Water, Tea Leaves, Honey
