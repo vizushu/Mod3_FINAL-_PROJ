@@ -6,6 +6,7 @@ const INGREDIENT_URL = `${BASE_URL}/ingredient`
 // Waiting for DOM to render login
 document.addEventListener('DOMContentLoaded', () => {
     getUser()
+    loginPage()
   })
 
 getUser = () => {
@@ -21,13 +22,12 @@ loginPage = () => {
     const h2 = document.createElement('h2')
     const input1 = document.createElement('input')
     const submitButton = document.createElement('button')
-    const p = document.createElement('p')
+    const signUpLink = document.createElement('p')
     const span = document.createElement('span')
-
 
     h2.innerText = "Login"
     submitButton.innerText = "Submit"
-    p.innerText = "New User"
+    signUpLink.innerText = "New User"
     span.innerText = "Sign Up here!"
 
     div1.className = 'Login'
@@ -40,47 +40,69 @@ loginPage = () => {
     main.appendChild(div1)
     div1.appendChild(form1)
     form1.appendChild(h2)
-    h2.appendChild(input1)
-    h2.appendChild(submitButton)
-    div1.appendChild(p)
-    p.appendChild(span)
+    form1.appendChild(input1)
+    form1.appendChild(submitButton)
+    div1.appendChild(signUpLink)
+    signUpLink.appendChild(span)
+
+    linkSpan.addEventListener("click", () => {
+        switchLoginForm(form2, form1)
+        signUpLink.className = "hidden"
+      })
 
 
-
-// // This function just swaps the login/signup forms
-// function switchLoginForm(show, hide){
-//     show.className = "login"
-//     hide.className = "hidden"
+// This function just swaps the login/signup forms
+switchLoginForm = (show, hide) => {
+    show.className = "login"
+    hide.className = "hidden"
   
-//     const loginLink = document.createElement("p");
-//     loginLink.textContent = "Login";
-//     loginLink.style.cursor = "pointer"
+    const loginLink = document.createElement("p");
+    loginLink.textContent = "Login";
+    loginLink.style.cursor = "pointer"
   
-//     show.appendChild(loginLink);
+    show.appendChild(loginLink);
   
-//     loginLink.addEventListener("click", () => {
-//       loginPage();
-//     })
-//   }
-
-    
-
-
-    
-    
+    loginLink.addEventListener("click", () => {
+      loginPage();
+    })
+  }
 }
 
+// This function display the error message
+displayErrorMessage = (message) => {
+    const errorWrapper = document.querySelector('#error-model')
+    const errorField = document.querySelector('#model-message')
+    const close = document.querySelector('.close')
+    errorField.textContent = message
+    errorWrapper.style.display = 'block'
+  
+    close.onclick = () => {
+      errorWrapper.style.display = 'none'
+    }
+  
+    window.onclick = function(event) {
+      if (event.target == errorWrapper) {
+        errorWrapper.style.display = 'none'
+      }
+    }
+  
+    setTimeout(() => {
+      errorField.textContent = ''
+      errorWrapper.style.display = 'none'
+    }, 3000)
+  }
 
+//Side navigation bar functions
 const closeButton = document.querySelector(".closebtn");
   closeButton.addEventListener("click", () => {
     closeNav();
   })
 
-function openNav() {
+openNav = () => {
     document.getElementById("mySidenav").style.width = "250px";
   }
 
   /* Set the width of the side navigation to 0 */
-  function closeNav() {
+closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
   }
