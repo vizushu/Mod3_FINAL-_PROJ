@@ -14,12 +14,6 @@ getUser = () => {
     .then(json => console.log(json))
   };
 
-function createTrainers() {
-  return fetch(TRAINERS_URL)
-    .then(resp => resp.json())
-    .then(json => renderTrainers(json));
-};
-
 const closeButton = document.querySelector(".closebtn");
   closeButton.addEventListener("click", () => {
     closeNav();
