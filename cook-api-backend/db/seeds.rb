@@ -17,7 +17,28 @@ require 'faker'
 end
 
 ingredients = [
-
+  'Water',
+  'Honey',
+  'Rice',
+  'Yeast',
+  'Flour',
+  'Egg',
+  'Syrup',
+  'Pork',
+  'Veggies',
+  'Shrimp',
+  'Seaweed',
+  'Green Tea',
+  'Beans',
+  'Tuna',
+  'Salmon',
+  'Soy Sauce',
+  'Chicken',
+  'Sugar',
+  'Sesame Seed',
+  'Salt',
+  'Bread',
+  'Mayo',
 ]
 
 ingredient_collection = []
@@ -26,76 +47,17 @@ ingredients.each do |name|
   ingredient_collection << Ingredient.create(name: name)
 end
 
-recipes = [
 
-]
-
-recipe_collection = []
-
-recipes.each do |name|
-  recipe_collection << Ingredient.create(name: name)
-end
-
-# Level 1
-# Tea: Water, Tea Leaves, Honey
-# Sake: Rice, Yeast, Water
-# Moon Cake: Flour, Egg, Syrup
-# Dumplings: Pork, Veggies, Flour
-# Tempura: Shrimp, Flour, Egg
-# Rice Cake: Rice, Seaweed, Water
-# Mochi: Green Tea, Rice, Beans
-# Sushi Tuna Roll: Rice, Seaweed, Tuna
-# Sushi Salmon Roll: Rice, Seaweed, Salmon
-# Chicken Teriyaki: Soy Sauce, Rice, Chicken
-# Fortune Cookie: Flour, Sugar, and Sesame Seed
-# Century Egg: Egg, Salt, Water
-# Japanese Egg Sandwich: Bread, Egg, Mayo
-#
-# Level 2
-# Pork Fried Rice: Rice, Egg, Pork, Soy Sauce
-# Ramen: Noodles, Broth, Veggies, Egg
-# Bento Box: Sushi, Brown Rice, Tempura, Veggies
-# Pumpkin Croquettes: Flour, Pumpkin, Egg, Bacon
-
-# Level 1
-# Tea
-# Sake
-# Moon Cake
-# Dumplings
-# Tempura
-# Rice Cake
-# Mochi
-# Sushi Tuna Roll
-# Sushi Salmon Roll
-# Chicken Teriyaki
-# Fortune Cookie: Flour, Sugar, and Sesame Seed
-# Century Egg: Egg, Salt, Water
-# Japanese Egg Sandwich: Bread, Egg, Mayo
-#
-# Level 2
-# Pork Fried Rice: Rice, Egg, Pork, Soy Sauce
-# Ramen: Noodles, Broth, Veggies, Egg
-# Bento Box: Sushi, Brown Rice, Tempura, Veggies
-# Pumpkin Croquettes: Flour, Pumpkin, Egg, Bacon
-#
-# kitchen/dishes =
-# Level 1
-# Tea: Water, Tea Leaves, Honey
-# Sake: Rice, Yeast, Water
-# Moon Cake: Flour, Egg, Syrup
-# Dumplings: Pork, Veggies, Flour
-# Tempura: Shrimp, Flour, Egg
-# Rice Cake: Rice, Seaweed, Water
-# Mochi: Green Tea, Rice, Beans
-# Sushi Tuna Roll: Rice, Seaweed, Tuna
-# Sushi Salmon Roll: Rice, Seaweed, Salmon
-# Chicken Teriyaki: Soy Sauce, Rice, Chicken
-# Fortune Cookie: Flour, Sugar, and Sesame Seed
-# Century Egg: Egg, Salt, Water
-# Japanese Egg Sandwich: Bread, Egg, Mayo
-#
-# Level 2
-# Pork Fried Rice: Rice, Egg, Pork, Soy Sauce
-# Ramen: Noodles, Broth, Veggies, Egg
-# Bento Box: Sushi, Brown Rice, Tempura, Veggies
-# Pumpkin Croquettes: Flour, Pumpkin, Egg, Bacon
+  Recipe.create(name: 'Tea', points: -10)
+  Recipe.create(name: 'Sake', points: 1250)
+  Recipe.create(name: 'Moon Cake', points: 50)
+  Recipe.create(name: 'Dumplings', points: 29)
+  Recipe.create(name: 'Tempura', points: 30)
+  Recipe.create(name: 'Rice Cake', points: 6)
+  Recipe.create(name: 'Mochi', points: 23)
+  Recipe.create(name: 'Sushi Tuna Roll', points: 90)
+  Recipe.create(name: 'Sushi Salmon Roll', points: 90)
+  Recipe.create(name: 'Chicken Teriyaki', points: 53)
+  Recipe.create(name: 'Fortune Cookie',points: -3)
+  Recipe.create(name: 'Century Egg', points: 0)
+  Recipe.create(name: 'Japanese Egg Sandwich', points: 900)
