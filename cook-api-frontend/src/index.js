@@ -63,7 +63,7 @@ showUser = (json, userName) => {
   for (var item in json) {
     // console.log('bob', json[item].name, userName, json.name)
     if(json[item].name == userName) {
-      console.log('meow')
+
       exsistsInDb = true
     }
    };
@@ -72,8 +72,7 @@ showUser = (json, userName) => {
   };
 }
 
-
-// loginUser()
+// loginUser() =>{}
 
 // This function just swaps the login/signup forms
 switchLoginForm = (show, hide) => {
@@ -91,8 +90,6 @@ switchLoginForm = (show, hide) => {
     })
   }
 }
-
-
 
 // This function display the error message
 displayErrorMessage = (message) => {
@@ -117,9 +114,6 @@ displayErrorMessage = (message) => {
       errorWrapper.style.display = 'none'
     }, 3000)
   }
-
-
-
 
 
 //Side navigation bar functions
