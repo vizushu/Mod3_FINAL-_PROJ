@@ -32,13 +32,33 @@ ingredients = [
   'Beans',
   'Tuna',
   'Salmon',
-  'Soy Sauce',
+  'Shoyu',
   'Chicken',
   'Sugar',
   'Sesame Seed',
   'Salt',
   'Bread',
   'Mayo',
+  'Dashi',
+  'Miso',
+  'Mirin',
+  'Soybeans',
+  'Daikon',
+  'Katsuobushi',
+  'Kombu',
+  'Negi',
+  'Aburaage',
+  'Yuzu',
+  'Wasabi',
+  'Panko',
+  'Karashi',
+  'Mochigome',
+  'Maitake',
+  'Shiso leaves',
+  'Kinako',
+  'Goya',
+  'Umeboshi',
+  'Nori',
 ]
 
 ingredient_collection = []
@@ -46,7 +66,6 @@ ingredient_collection = []
 ingredients.each do |name|
   ingredient_collection << Ingredient.create(name: name)
 end
-
 
   Recipe.create(name: 'Tea', points: -10)
   Recipe.create(name: 'Sake', points: 1250)

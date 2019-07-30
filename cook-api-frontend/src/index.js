@@ -18,62 +18,109 @@ loginPage = () => {
     const main = document.getElementById('main-wrapper')
     const div1 = document.createElement('div')
     const form1 = document.createElement('form')
-    const h2 = document.createElement('h2')
+    const form2 = document.createElement('form')
+    const header1 = document.createElement('h2')
+    const header2 = document.createElement('h2')
     const input1 = document.createElement('input')
+    const input2 = document.createElement('input')
     const submitButton = document.createElement('button')
+    const signUpButton = document.createElement('button')
     const signUpLink = document.createElement('p')
     const linkSpan = document.createElement('span')
 
-    h2.innerText = "Login"
-    submitButton.innerText = "Submit"
-    signUpLink.innerText = "New User"
+    header1.innerText = "Login"
+    header2.innerText = "Sign up"
+    submitButton.innerText = "Log in"
+    signUpButton.innerText = "Sign Up"
+    signUpLink.innerText = "New User "
     linkSpan.innerText = "Sign Up here!"
 
     div1.className = 'Login'
     form1.className = 'Login'
-    submitButton.className = 'submit'
+    form2.className = 'Hidden'
+    submitButton.className = 'Submit'
+    signUpButton.className = 'Submit'
 
+    input1.setAttribute("placeholder", "Enter Your Username")
     input1.setAttribute("type", "text")
+    input2.setAttribute("placeholder", "Enter A Username")
     submitButton.setAttribute("type", "submit")
 
     main.appendChild(div1)
     div1.appendChild(form1)
-    form1.appendChild(h2)
+    div1.appendChild(form2)
+    form1.appendChild(header1)
     form1.appendChild(input1)
     form1.appendChild(submitButton)
+    form2.appendChild(header2)
+    form2.appendChild(input2)
+    form2.appendChild(signUpButton)
     div1.appendChild(signUpLink)
     signUpLink.appendChild(linkSpan)
+
+    form1.addEventListener("submit", (e) => {
+      e.preventDefault()
+      let userName = e.target[0].value;
+      getUser()
+      .then(data => userLogin(data, userName))
+    })
+
+    form2.addEventListener("submit", (e) => {
+        e.preventDefault()
+        let name = e.target[0].value;
+        userSignup(name)
+      })
 
     linkSpan.addEventListener("click", () => {
         switchLoginForm(form2, form1)
         signUpLink.className = "hidden"
     })
 
-    form1.addEventListener("submit", (e) => {
-      e.preventDefault()
-      let userName = e.target[0].value;
-      getUser()
-      .then(data => showUser(data, userName))
-    })
-
 // This is the show user function
-showUser = (json, userName) => {
-  console.log(json)
+userLogin = (json, userName) => {
   let exsistsInDb = false
   for (var item in json) {
-    // console.log('bob', json[item].name, userName, json.name)
     if(json[item].name == userName) {
-      console.log('meow')
+      userGame()
       exsistsInDb = true
     }
    };
     if(exsistsInDb == false) {
-      return displayErrorMessage("WANT TO SIGN UP?")
+      return displayErrorMessage("Sign up to play the game!")
   };
 }
 
+// This creates a new user when a user signs up
+userSignup = (name, score = 0) => {
+    console.log(USER_URL)
+     fetch(USER_URL, {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        score : score
+      })
+    })
+    .then(res => res.json())
+    .then(json => {
+      if (json.name == name) {
+        console.log('redirect to userGame later')
+      }
+      else {
+        displayErrorMessage("That username is already taken!")
+        console.log('redirect to userGame later')
+      }
+    })
+  }
 
-// loginUser()
+
+// This function login the user to the game
+userGame = () => {
+    // we will clear all the HTML from login form and build new html that will render new html page for the game
+}
 
 // This function just swaps the login/signup forms
 switchLoginForm = (show, hide) => {
@@ -91,8 +138,6 @@ switchLoginForm = (show, hide) => {
     })
   }
 }
-
-
 
 // This function display the error message
 displayErrorMessage = (message) => {
@@ -118,10 +163,6 @@ displayErrorMessage = (message) => {
     }, 3000)
   }
 
-
-
-
-
 //Side navigation bar functions
 const closeButton = document.querySelector(".closebtn");
   closeButton.addEventListener("click", () => {
@@ -131,8 +172,6 @@ const closeButton = document.querySelector(".closebtn");
 openNav = () => {
     document.getElementById("mySidenav").style.width = "250px";
   }
-
-  /* Set the width of the side navigation to 0 */
 closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
   }

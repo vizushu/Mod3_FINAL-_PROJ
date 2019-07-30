@@ -1,5 +1,5 @@
 #main-wrapper {
-    color : red
+    color: black
 }
 
 #main-header {
@@ -78,11 +78,12 @@
   }
 
   .model-content {
-    background-color: #EA5737;
+    background-color:red;
     text-align: center;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #888;
     width: 60%;
-    border-radius: 40px;
+    border-radius: 90px;
   }
+

@@ -1823,3 +1823,1301 @@ Processing by UsersController#index as */*
 Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/users" for ::1 at 2019-07-30 11:34:58 -0700
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/renierdelacruz/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 20ms (Views: 9.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 11:35:08 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 12:50:43 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 12:50:46 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 12:50:51 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 12:50:54 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 12:51:04 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 12:58:57 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 63ms (Views: 62.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:03:16 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:03:28 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:03:31 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:03:49 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:03:53 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:03:56 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:04:09 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:04:18 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:04:27 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:04:37 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:04:39 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:04:45 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:05:04 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:13:13 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:21:37 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 13ms (Views: 9.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 13:21:37 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd73c80b2c0>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 13:21:38 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 13:21:38 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd73c80b2c0>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 13:21:38 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 13:21:38 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd73c80b2c0>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 13:21:38 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 13:21:38 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd73c80b2c0>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 13:21:38 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 13:21:38 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd73c80b2c0>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 13:21:38 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 13:21:38 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd73c80b2c0>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 13:21:40 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 13:21:40 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd73c80b2c0>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 13:26:47 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:26:53 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 13:26:59 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 13:26:59 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd73c80b2c0>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 13:27:49 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 13:27:49 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd73c80b2c0>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 13:28:20 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 13:28:20 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd73c80b2c0>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 13:29:18 -0700
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/renierdelacruz/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 27ms (Views: 18.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 13:29:18 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd20017ab90>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 14:35:41 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 14:35:46 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 14:38:05 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 14:38:12 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 14:38:12 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd20017ab90>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 14:41:03 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 14:41:03 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd20017ab90>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 14:41:08 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 14:41:08 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd20017ab90>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 14:41:12 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 14:41:12 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd20017ab90>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 14:44:44 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 14:44:44 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd20017ab90>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 14:45:41 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 14:45:41 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}], "user"=>{"name"=>[{"id"=>1, "name"=>"Michael Otto Nuys", "score"=>0}, {"id"=>2, "name"=>"Barry D. Hatchett", "score"=>0}, {"id"=>3, "name"=>"Lowden Clear", "score"=>0}, {"id"=>4, "name"=>"Rufus Leaking", "score"=>0}, {"id"=>5, "name"=>"Tom Katt", "score"=>0}, {"id"=>6, "name"=>"Barry D'Alive", "score"=>0}, {"id"=>7, "name"=>"Dinah Soares", "score"=>0}, {"id"=>8, "name"=>"Doug Love Fitzhugh", "score"=>0}, {"id"=>9, "name"=>"Rose Gardner", "score"=>0}, {"id"=>10, "name"=>"Dan Geruss", "score"=>0}, {"id"=>11, "name"=>"Michelle Lynn", "score"=>0}, {"id"=>12, "name"=>"Faye Kinnitt", "score"=>0}, {"id"=>13, "name"=>"Bea Lowe", "score"=>0}, {"id"=>14, "name"=>"Barry Cade", "score"=>0}, {"id"=>15, "name"=>"X. Benedict", "score"=>0}, {"id"=>16, "name"=>"Ferris Wheeler", "score"=>0}, {"id"=>17, "name"=>"Colette A. Day", "score"=>0}, {"id"=>18, "name"=>"Ilene Dover", "score"=>0}, {"id"=>19, "name"=>"Mike Raffone", "score"=>0}, {"id"=>20, "name"=>"Holly Day", "score"=>0}]}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd20017ab90>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2019-07-30 14:50:17 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asd", "user"=>{"name"=>"asd"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd20017ab90>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2019-07-30 14:52:38 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asd", "user"=>{"name"=>"asd"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd20017ab90>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2019-07-30 14:53:18 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"dasd", "user"=>{"name"=>"dasd"}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd20017ab90>):
+  
+app/controllers/users_controller.rb:16:in `create'
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT  "ingredients".* FROM "ingredients" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2019-07-30 14:54:55 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/renierdelacruz/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/renierdelacruz/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (6.4ms)
+Completed 200 OK in 29ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 14:54:58 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/ingredients" for ::1 at 2019-07-30 14:55:07 -0700
+Processing by IngredientsController#index as HTML
+  [1m[36mIngredient Load (1.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5
+Completed 200 OK in 21ms (Views: 10.9ms | ActiveRecord: 2.1ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/ingredients" for ::1 at 2019-07-30 14:55:53 -0700
+Processing by IngredientsController#index as HTML
+  [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5
+Completed 200 OK in 11ms (Views: 6.1ms | ActiveRecord: 1.2ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Daisy Chain"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Daisy Chain"], ["created_at", "2019-07-30 21:56:02.593248"], ["updated_at", "2019-07-30 21:56:02.593248"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Theresa Green"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Theresa Green"], ["created_at", "2019-07-30 21:56:02.598622"], ["updated_at", "2019-07-30 21:56:02.598622"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Nick O'Time"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Nick O'Time"], ["created_at", "2019-07-30 21:56:02.602030"], ["updated_at", "2019-07-30 21:56:02.602030"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Adam Zapel"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Adam Zapel"], ["created_at", "2019-07-30 21:56:02.605288"], ["updated_at", "2019-07-30 21:56:02.605288"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jack Hammer"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Jack Hammer"], ["created_at", "2019-07-30 21:56:02.609371"], ["updated_at", "2019-07-30 21:56:02.609371"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Lily Livard"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Lily Livard"], ["created_at", "2019-07-30 21:56:02.645222"], ["updated_at", "2019-07-30 21:56:02.645222"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Megan Bacon"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Megan Bacon"], ["created_at", "2019-07-30 21:56:02.650238"], ["updated_at", "2019-07-30 21:56:02.650238"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Holly Day"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Kay Neine"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Kay Neine"], ["created_at", "2019-07-30 21:56:02.656128"], ["updated_at", "2019-07-30 21:56:02.656128"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Allen Rench"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Allen Rench"], ["created_at", "2019-07-30 21:56:02.659047"], ["updated_at", "2019-07-30 21:56:02.659047"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Water"], ["created_at", "2019-07-30 21:56:02.666776"], ["updated_at", "2019-07-30 21:56:02.666776"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Honey"], ["created_at", "2019-07-30 21:56:02.668898"], ["updated_at", "2019-07-30 21:56:02.668898"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Rice"], ["created_at", "2019-07-30 21:56:02.672294"], ["updated_at", "2019-07-30 21:56:02.672294"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Yeast"], ["created_at", "2019-07-30 21:56:02.675060"], ["updated_at", "2019-07-30 21:56:02.675060"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Flour"], ["created_at", "2019-07-30 21:56:02.677648"], ["updated_at", "2019-07-30 21:56:02.677648"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Egg"], ["created_at", "2019-07-30 21:56:02.680516"], ["updated_at", "2019-07-30 21:56:02.680516"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Syrup"], ["created_at", "2019-07-30 21:56:02.682865"], ["updated_at", "2019-07-30 21:56:02.682865"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Pork"], ["created_at", "2019-07-30 21:56:02.686437"], ["updated_at", "2019-07-30 21:56:02.686437"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Veggies"], ["created_at", "2019-07-30 21:56:02.688465"], ["updated_at", "2019-07-30 21:56:02.688465"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Shrimp"], ["created_at", "2019-07-30 21:56:02.691171"], ["updated_at", "2019-07-30 21:56:02.691171"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Seaweed"], ["created_at", "2019-07-30 21:56:02.693932"], ["updated_at", "2019-07-30 21:56:02.693932"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Green Tea"], ["created_at", "2019-07-30 21:56:02.696004"], ["updated_at", "2019-07-30 21:56:02.696004"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Beans"], ["created_at", "2019-07-30 21:56:02.698413"], ["updated_at", "2019-07-30 21:56:02.698413"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tuna"], ["created_at", "2019-07-30 21:56:02.700595"], ["updated_at", "2019-07-30 21:56:02.700595"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Salmon"], ["created_at", "2019-07-30 21:56:02.703212"], ["updated_at", "2019-07-30 21:56:02.703212"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.5ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Shoyu"], ["created_at", "2019-07-30 21:56:02.706040"], ["updated_at", "2019-07-30 21:56:02.706040"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chicken"], ["created_at", "2019-07-30 21:56:02.708213"], ["updated_at", "2019-07-30 21:56:02.708213"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.8ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Sugar"], ["created_at", "2019-07-30 21:56:02.710361"], ["updated_at", "2019-07-30 21:56:02.710361"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Sesame Seed"], ["created_at", "2019-07-30 21:56:02.713291"], ["updated_at", "2019-07-30 21:56:02.713291"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Salt"], ["created_at", "2019-07-30 21:56:02.716596"], ["updated_at", "2019-07-30 21:56:02.716596"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Bread"], ["created_at", "2019-07-30 21:56:02.718517"], ["updated_at", "2019-07-30 21:56:02.718517"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Mayo"], ["created_at", "2019-07-30 21:56:02.721423"], ["updated_at", "2019-07-30 21:56:02.721423"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Dashi"], ["created_at", "2019-07-30 21:56:02.723717"], ["updated_at", "2019-07-30 21:56:02.723717"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Miso"], ["created_at", "2019-07-30 21:56:02.726370"], ["updated_at", "2019-07-30 21:56:02.726370"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Mirin"], ["created_at", "2019-07-30 21:56:02.729149"], ["updated_at", "2019-07-30 21:56:02.729149"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Soybeans"], ["created_at", "2019-07-30 21:56:02.731700"], ["updated_at", "2019-07-30 21:56:02.731700"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Daikon"], ["created_at", "2019-07-30 21:56:02.734482"], ["updated_at", "2019-07-30 21:56:02.734482"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Katsuobushi"], ["created_at", "2019-07-30 21:56:02.736810"], ["updated_at", "2019-07-30 21:56:02.736810"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Kombu"], ["created_at", "2019-07-30 21:56:02.738741"], ["updated_at", "2019-07-30 21:56:02.738741"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Negi"], ["created_at", "2019-07-30 21:56:02.740898"], ["updated_at", "2019-07-30 21:56:02.740898"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Aburaage"], ["created_at", "2019-07-30 21:56:02.742654"], ["updated_at", "2019-07-30 21:56:02.742654"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Yuzu"], ["created_at", "2019-07-30 21:56:02.744688"], ["updated_at", "2019-07-30 21:56:02.744688"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Wasabi"], ["created_at", "2019-07-30 21:56:02.746700"], ["updated_at", "2019-07-30 21:56:02.746700"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Panko"], ["created_at", "2019-07-30 21:56:02.748442"], ["updated_at", "2019-07-30 21:56:02.748442"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Karashi"], ["created_at", "2019-07-30 21:56:02.750111"], ["updated_at", "2019-07-30 21:56:02.750111"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Mochigome"], ["created_at", "2019-07-30 21:56:02.752564"], ["updated_at", "2019-07-30 21:56:02.752564"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Maitake"], ["created_at", "2019-07-30 21:56:02.755302"], ["updated_at", "2019-07-30 21:56:02.755302"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Shiso leaves"], ["created_at", "2019-07-30 21:56:02.775350"], ["updated_at", "2019-07-30 21:56:02.775350"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Kinako"], ["created_at", "2019-07-30 21:56:02.779927"], ["updated_at", "2019-07-30 21:56:02.779927"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Goya"], ["created_at", "2019-07-30 21:56:02.783982"], ["updated_at", "2019-07-30 21:56:02.783982"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Umeboshi"], ["created_at", "2019-07-30 21:56:02.786269"], ["updated_at", "2019-07-30 21:56:02.786269"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Nori"], ["created_at", "2019-07-30 21:56:02.788053"], ["updated_at", "2019-07-30 21:56:02.788053"]]
+  ↳ db/seeds.rb:67
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:67
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:70
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Tea"], ["points", -10], ["created_at", "2019-07-30 21:56:02.795269"], ["updated_at", "2019-07-30 21:56:02.795269"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:70
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:71
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Sake"], ["points", 1250], ["created_at", "2019-07-30 21:56:02.797865"], ["updated_at", "2019-07-30 21:56:02.797865"]]
+  ↳ db/seeds.rb:71
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:71
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:72
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Moon Cake"], ["points", 50], ["created_at", "2019-07-30 21:56:02.800214"], ["updated_at", "2019-07-30 21:56:02.800214"]]
+  ↳ db/seeds.rb:72
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:72
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Dumplings"], ["points", 29], ["created_at", "2019-07-30 21:56:02.802886"], ["updated_at", "2019-07-30 21:56:02.802886"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:74
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Tempura"], ["points", 30], ["created_at", "2019-07-30 21:56:02.804804"], ["updated_at", "2019-07-30 21:56:02.804804"]]
+  ↳ db/seeds.rb:74
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:74
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Rice Cake"], ["points", 6], ["created_at", "2019-07-30 21:56:02.807304"], ["updated_at", "2019-07-30 21:56:02.807304"]]
+  ↳ db/seeds.rb:75
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:75
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:76
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Mochi"], ["points", 23], ["created_at", "2019-07-30 21:56:02.810091"], ["updated_at", "2019-07-30 21:56:02.810091"]]
+  ↳ db/seeds.rb:76
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:76
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:77
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Sushi Tuna Roll"], ["points", 90], ["created_at", "2019-07-30 21:56:02.812431"], ["updated_at", "2019-07-30 21:56:02.812431"]]
+  ↳ db/seeds.rb:77
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:77
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:78
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Sushi Salmon Roll"], ["points", 90], ["created_at", "2019-07-30 21:56:02.814338"], ["updated_at", "2019-07-30 21:56:02.814338"]]
+  ↳ db/seeds.rb:78
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:78
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Chicken Teriyaki"], ["points", 53], ["created_at", "2019-07-30 21:56:02.816869"], ["updated_at", "2019-07-30 21:56:02.816869"]]
+  ↳ db/seeds.rb:79
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:79
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Fortune Cookie"], ["points", -3], ["created_at", "2019-07-30 21:56:02.818891"], ["updated_at", "2019-07-30 21:56:02.818891"]]
+  ↳ db/seeds.rb:80
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:80
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:81
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Century Egg"], ["points", 0], ["created_at", "2019-07-30 21:56:02.821600"], ["updated_at", "2019-07-30 21:56:02.821600"]]
+  ↳ db/seeds.rb:81
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:81
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:82
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Japanese Egg Sandwich"], ["points", 900], ["created_at", "2019-07-30 21:56:02.824085"], ["updated_at", "2019-07-30 21:56:02.824085"]]
+  ↳ db/seeds.rb:82
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:82
+Started GET "/ingredients" for ::1 at 2019-07-30 14:56:05 -0700
+Processing by IngredientsController#index as HTML
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started POST "/users" for ::1 at 2019-07-30 14:57:51 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asd", "user"=>{"name"=>"asd"}}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.7ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd1fdf26800>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 14:57:55 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 14:59:13 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"sad", "user"=>{"name"=>"sad"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd1fdf26800>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/" for ::1 at 2019-07-30 15:00:14 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/renierdelacruz/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/renierdelacruz/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (7.0ms)
+Completed 200 OK in 19ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 15:00:18 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 15:01:09 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 15:01:14 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asd", "user"=>{"name"=>"asd"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd1fdf26800>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2019-07-30 15:01:49 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"s", "user"=>{"name"=>"s"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd1fdf26800>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2019-07-30 15:02:35 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asd", "user"=>{"name"=>"asd"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd1fdf26800>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2019-07-30 15:05:07 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asdas", "user"=>{"name"=>"asdas"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd1fdf26800>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2019-07-30 15:06:47 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asdas", "user"=>{"name"=>"asdas"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd1fdf26800>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2019-07-30 15:07:00 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"kjh", "user"=>{"name"=>"kjh"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd1fdf26800>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2019-07-30 15:10:05 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asd", "user"=>{"name"=>"asd"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd1fdf26800>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/users" for ::1 at 2019-07-30 15:11:06 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 15:11:45 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asd", "user"=>{"name"=>"asd"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd1fdf26800>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2019-07-30 15:11:58 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"sdsad", "user"=>{"name"=>"sdsad"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd1fdf26800>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2019-07-30 15:13:47 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asd", "score"=>0, "user"=>{"name"=>"asd", "score"=>0}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd1fdf26800>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2019-07-30 15:14:50 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"", "score"=>0, "user"=>{"name"=>"", "score"=>0}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd1fdf26800>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2019-07-30 15:16:30 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asd", "score"=>0, "user"=>{"name"=>"asd", "score"=>0}}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd1fdf26800>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started GET "/" for ::1 at 2019-07-30 15:16:49 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/renierdelacruz/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/renierdelacruz/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (5.6ms)
+Completed 200 OK in 13ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 15:16:53 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for ::1 at 2019-07-30 15:17:06 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10
+Completed 500 Internal Server Error in 122ms (ActiveRecord: 0.5ms)
+
+
+  
+NameError (undefined local variable or method `users' for #<UsersController:0x00007fd1fdfad828>
+Did you mean?  user):
+  
+app/controllers/users_controller.rb:11:in `show'
+Started GET "/users" for ::1 at 2019-07-30 15:17:11 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 15:18:21 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asd", "score"=>0, "user"=>{"name"=>"asd", "score"=>0}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd1fdf26800>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2019-07-30 15:18:50 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asd", "score"=>0, "user"=>{"name"=>"asd", "score"=>0}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `save' for #<Class:0x00007fd1fdf26800>):
+  
+app/controllers/users_controller.rb:16:in `create'
+Started POST "/users" for ::1 at 2019-07-30 15:21:06 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asd", "score"=>0, "user"=>{"name"=>"asd", "score"=>0}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "asd"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "asd"], ["created_at", "2019-07-30 22:21:06.180124"], ["updated_at", "2019-07-30 22:21:06.180124"]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 3.4ms)
+
+
+  
+NameError (undefined local variable or method `users' for #<UsersController:0x00007fd1fc9648c8>
+Did you mean?  user):
+  
+app/controllers/users_controller.rb:17:in `create'
+Started POST "/users" for ::1 at 2019-07-30 15:21:46 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asd", "score"=>0, "user"=>{"name"=>"asd", "score"=>0}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "asd"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 198ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 15:21:57 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 15:22:24 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 15:22:32 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asd", "score"=>0, "user"=>{"name"=>"asd", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "asd"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 15:23:29 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"asd", "score"=>0, "user"=>{"name"=>"asd", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "asd"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-30 15:23:42 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"RJ", "score"=>0, "user"=>{"name"=>"RJ", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "RJ"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "RJ"], ["created_at", "2019-07-30 22:23:42.338891"], ["updated_at", "2019-07-30 22:23:42.338891"]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/users" for ::1 at 2019-07-30 15:25:29 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+
+
