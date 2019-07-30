@@ -1,21 +1,21 @@
 class IngredientsController < ApplicationController
 
     def index
-        ingredient = Ingredient.all
-        render JSON
+        ingredients = Ingredient.all
+        render json: ingredients, except: [:created_at, :updated_at]
     end
 
     def show
         ingredient = Ingredient.find(params[:id])
-        render JSON
+        render json: ingredients, except: [:created_at, :updated_at]
     end
 
     def create
         ingredient = Ingredient.new(name: params[:name])
         if Ingredient.save
-            render JSON: ingredient
-        else 
-            render JSON: {message: 'Error saving name'}
+            render json: ingredients, except: [:created_at, :updated_at]
+        else
+            render json: {message: 'Error saving name'}
         end
     end
 
