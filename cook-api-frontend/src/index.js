@@ -12,7 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
 getUser = () => {
     return fetch(USER_URL)
     .then(res => res.json())
-    .then(json => console.log(json))
+    .then(json => {  
+    let user = json.find(el => {
+        return el.username === username
+      })
+      if (user) {
+          login(user)
+      }
+      else {
+        displayErrorMessage("We could not find a trainer with that username!")
+        loginPage()
+      }
   };
 
 loginPage = () => {
