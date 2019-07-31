@@ -1,6 +1,4 @@
-#main-wrapper {
-    color : red
-}
+
 
 #main-header {
     transition: margin-left .5s;
@@ -26,7 +24,7 @@
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
     overflow-x: hidden; 
     padding-top: 60px;
     transition: 0.5s; 
@@ -78,11 +76,22 @@
   }
 
   .model-content {
-    background-color: #EA5737;
+    background-color:red;
     text-align: center;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #888;
     width: 60%;
-    border-radius: 40px;
+    border-radius: 90px;
   }
+
+.body {
+  background-image: url(./images/loginBackgroung.jpg);
+}
+
+#divIngredient{
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}

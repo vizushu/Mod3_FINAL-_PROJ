@@ -32,13 +32,33 @@ ingredients = [
   'Beans',
   'Tuna',
   'Salmon',
-  'Soy Sauce',
+  'Shoyu',
   'Chicken',
   'Sugar',
   'Sesame Seed',
   'Salt',
   'Bread',
   'Mayo',
+  'Dashi',
+  'Miso',
+  'Mirin',
+  'Soybeans',
+  'Daikon',
+  'Katsuobushi',
+  'Kombu',
+  'Negi',
+  'Aburaage',
+  'Yuzu',
+  'Wasabi',
+  'Panko',
+  'Karashi',
+  'Mochigome',
+  'Maitake',
+  'Shiso leaves',
+  'Kinako',
+  'Goya',
+  'Umeboshi',
+  'Nori',
 ]
 
 ingredient_collection = []
@@ -47,10 +67,9 @@ ingredients.each do |name|
   ingredient_collection << Ingredient.create(name: name)
 end
 
-
-  Recipe.create(name: 'Tea', points: -10)
-  Recipe.create(name: 'Sake', points: 1250)
-  Recipe.create(name: 'Moon Cake', points: 50)
+  Recipe.create(name: 'Tea', points: -10, img_url: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/teacup-without-handle_1f375.png')
+  Recipe.create(name: 'Sake', points: 1250, img_url: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/sake-bottle-and-cup_1f376.png')
+  Recipe.create(name: 'Moon Cake', points: 50, img_url: )
   Recipe.create(name: 'Dumplings', points: 29)
   Recipe.create(name: 'Tempura', points: 30)
   Recipe.create(name: 'Rice Cake', points: 6)
