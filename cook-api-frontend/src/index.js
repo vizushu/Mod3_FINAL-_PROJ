@@ -174,8 +174,6 @@ drop = (ev) => {
 
 // WE NEED A FUNCTION TO SHOW CREATED RECIPE
 
-// WE NEED A FUNCTION TO SHOW THE
-
 }
 
 // This function just swaps the login/signup forms
