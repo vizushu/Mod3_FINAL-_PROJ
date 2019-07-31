@@ -13,8 +13,8 @@ class UsersController < ApplicationController
 
     def create
         user = User.new(name: params[:name])
-        if User.save
-            render json: users, except: [:created_at, :updated_at]
+        if user.save
+            render json: user, except: [:created_at, :updated_at]
         else
             render json: {message: 'Error saving name'}
         end

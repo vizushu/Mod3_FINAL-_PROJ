@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background-image: url('https://wallpapercave.com/wp/a1KbZCt.png');
    background-repeat: no-repeat;
@@ -10,6 +11,9 @@ body {
 #main-wrapper {
     color : red
 }
+=======
+
+>>>>>>> ea6b6a92caa86520926a284f51f08ec2fe02e49a
 
 #main-header {
     transition: margin-left .5s;
@@ -35,8 +39,13 @@ body {
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
+<<<<<<< HEAD
     background-color: rgba(255, 255, 255, 0);
     overflow-x: hidden;
+=======
+    background-color: rgba(0, 0, 0, 0);
+    overflow-x: hidden; 
+>>>>>>> ea6b6a92caa86520926a284f51f08ec2fe02e49a
     padding-top: 60px;
     transition: 0.5s;
   }
@@ -87,11 +96,27 @@ body {
   }
 
   .model-content {
-    background-color: #EA5737;
+    background-color:red;
     text-align: center;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #888;
     width: 60%;
+<<<<<<< HEAD
     border-radius: 40px;
   }
+=======
+    border-radius: 90px;
+  }
+
+.body {
+  background-image: url(./images/loginBackgroung.jpg);
+}
+
+#divIngredient{
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+>>>>>>> ea6b6a92caa86520926a284f51f08ec2fe02e49a
