@@ -6,12 +6,13 @@ const INGREDIENT_URL = `${BASE_URL}/ingredients`
 // Waiting for DOM to render login
 document.addEventListener('DOMContentLoaded', () => {
     loginPage()
+    userScore()
   })
 
   getUser = () => {
       return fetch(USER_URL)
       .then(res => res.json())
-      .then(json => json)
+      .then(json => userScore(json))
     };
 
 loginPage = () => {
@@ -91,8 +92,7 @@ userLogin = (json, userName) => {
 }
 
 // This creates a new user when a user signs up
-userSignup = (name, score = 0) => {
-    console.log(USER_URL)
+userSignup = (name, score= 0) => {
      fetch(USER_URL, {
       method: "POST",
       headers: {
@@ -101,7 +101,7 @@ userSignup = (name, score = 0) => {
       },
       body: JSON.stringify({
         name: name,
-        score : score
+        score: score
       })
     })
     .then(res => res.json())
@@ -165,7 +165,12 @@ drop = (ev) => {
 }
 
 // WE NEED A FUNCTION TO SHOW THE USER'S SCORE
-
+userScore = (json) => {
+  // let currentScore = json.score
+  let userScore = document.getElementById("pointCard")
+  userScore.innerText = 0
+console.log(json)
+}
 // WE NEED A FUNCTION TO SHOW TOP 5 USER'S SCORE
 
 // WE NEED A FUNCTION TO SHOW INGREDIENTS PICTURES

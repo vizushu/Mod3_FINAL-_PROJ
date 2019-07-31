@@ -3695,3 +3695,1135 @@ Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms)
 
 
 >>>>>>> dbdf48e0b6a0207a3063f662f96dbe4ec022843d
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateRecipes (20190729174157)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "recipes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "points" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190729174157_create_recipes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190729174157"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190729174324)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190729174324_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190729174324"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateDishes (20190729174410)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "dishes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "recipe_id" integer, "ingredient_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190729174410_create_dishes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190729174410"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreateIngredients (20190729174437)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "ingredients" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190729174437_create_ingredients.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190729174437"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddScoreToUsers (20190729210414)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "score" integer[0m
+  ↳ db/migrate/20190729210414_add_score_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190729210414"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddImgToRecipes (20190731184629)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "recipes" ADD "img_url" varchar[0m
+  ↳ db/migrate/20190731184629_add_img_to_recipes.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190731184629"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to AddImgToIngredients (20190731184655)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "ingredients" ADD "img_url" varchar[0m
+  ↳ db/migrate/20190731184655_add_img_to_ingredients.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190731184655"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-07-31 21:18:00.857398"], ["updated_at", "2019-07-31 21:18:00.857398"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Rita Story"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Rita Story"], ["created_at", "2019-07-31 21:22:26.414663"], ["updated_at", "2019-07-31 21:22:26.414663"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Dan Saul Knight"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Dan Saul Knight"], ["created_at", "2019-07-31 21:22:26.418157"], ["updated_at", "2019-07-31 21:22:26.418157"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Marshall Law"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Marshall Law"], ["created_at", "2019-07-31 21:22:26.435087"], ["updated_at", "2019-07-31 21:22:26.435087"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Cara Van"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Cara Van"], ["created_at", "2019-07-31 21:22:26.438137"], ["updated_at", "2019-07-31 21:22:26.438137"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Emile Eaton"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Emile Eaton"], ["created_at", "2019-07-31 21:22:26.441181"], ["updated_at", "2019-07-31 21:22:26.441181"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Daisy Picking"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Daisy Picking"], ["created_at", "2019-07-31 21:22:26.444348"], ["updated_at", "2019-07-31 21:22:26.444348"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Ricky T. Ladder"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Ricky T. Ladder"], ["created_at", "2019-07-31 21:22:26.447219"], ["updated_at", "2019-07-31 21:22:26.447219"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Al Dente"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Al Dente"], ["created_at", "2019-07-31 21:22:26.449331"], ["updated_at", "2019-07-31 21:22:26.449331"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Chris Mass"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Chris Mass"], ["created_at", "2019-07-31 21:22:26.451430"], ["updated_at", "2019-07-31 21:22:26.451430"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Rusty Steele"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Rusty Steele"], ["created_at", "2019-07-31 21:22:26.453413"], ["updated_at", "2019-07-31 21:22:26.453413"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Katy Litter"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Katy Litter"], ["created_at", "2019-07-31 21:25:10.856512"], ["updated_at", "2019-07-31 21:25:10.856512"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Marty Graw"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Marty Graw"], ["created_at", "2019-07-31 21:25:10.859869"], ["updated_at", "2019-07-31 21:25:10.859869"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Iona Ford"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Iona Ford"], ["created_at", "2019-07-31 21:25:10.862043"], ["updated_at", "2019-07-31 21:25:10.862043"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Phil DeGrave"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Phil DeGrave"], ["created_at", "2019-07-31 21:25:10.864210"], ["updated_at", "2019-07-31 21:25:10.864210"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Evan Keel"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Evan Keel"], ["created_at", "2019-07-31 21:25:10.866440"], ["updated_at", "2019-07-31 21:25:10.866440"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Tommy Hawk"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Tommy Hawk"], ["created_at", "2019-07-31 21:25:10.868660"], ["updated_at", "2019-07-31 21:25:10.868660"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Rusty Fender"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Rusty Fender"], ["created_at", "2019-07-31 21:25:10.870829"], ["updated_at", "2019-07-31 21:25:10.870829"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Ewan Whatarmy"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Ewan Whatarmy"], ["created_at", "2019-07-31 21:25:10.872928"], ["updated_at", "2019-07-31 21:25:10.872928"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Marlon Fisher"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Marlon Fisher"], ["created_at", "2019-07-31 21:25:10.889218"], ["updated_at", "2019-07-31 21:25:10.889218"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Cody Pendant"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Cody Pendant"], ["created_at", "2019-07-31 21:25:10.892244"], ["updated_at", "2019-07-31 21:25:10.892244"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Taylor Maid"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Taylor Maid"], ["created_at", "2019-07-31 21:25:53.490785"], ["updated_at", "2019-07-31 21:25:53.490785"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Macon Paine"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Macon Paine"], ["created_at", "2019-07-31 21:25:53.494481"], ["updated_at", "2019-07-31 21:25:53.494481"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Rocky Mountain"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Rocky Mountain"], ["created_at", "2019-07-31 21:25:53.497318"], ["updated_at", "2019-07-31 21:25:53.497318"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Iona Ford"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Maude L. T. Ford"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Maude L. T. Ford"], ["created_at", "2019-07-31 21:25:53.501438"], ["updated_at", "2019-07-31 21:25:53.501438"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Doris Open"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Doris Open"], ["created_at", "2019-07-31 21:25:53.503884"], ["updated_at", "2019-07-31 21:25:53.503884"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Amanda B. Reckonwith"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Amanda B. Reckonwith"], ["created_at", "2019-07-31 21:25:53.505968"], ["updated_at", "2019-07-31 21:25:53.505968"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "I. D. Clair"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "I. D. Clair"], ["created_at", "2019-07-31 21:25:53.508024"], ["updated_at", "2019-07-31 21:25:53.508024"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jay Bird"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Jay Bird"], ["created_at", "2019-07-31 21:25:53.527623"], ["updated_at", "2019-07-31 21:25:53.527623"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Moe DeLawn"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Moe DeLawn"], ["created_at", "2019-07-31 21:25:53.530583"], ["updated_at", "2019-07-31 21:25:53.530583"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Winnie Dipoo"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Winnie Dipoo"], ["created_at", "2019-07-31 21:30:20.773127"], ["updated_at", "2019-07-31 21:30:20.773127"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Les Moore"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Les Moore"], ["created_at", "2019-07-31 21:30:20.776079"], ["updated_at", "2019-07-31 21:30:20.776079"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Rusty Irons"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Rusty Irons"], ["created_at", "2019-07-31 21:30:20.778905"], ["updated_at", "2019-07-31 21:30:20.778905"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Sue Jeu"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Sue Jeu"], ["created_at", "2019-07-31 21:30:20.781277"], ["updated_at", "2019-07-31 21:30:20.781277"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Andy Friese"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Andy Friese"], ["created_at", "2019-07-31 21:30:20.783527"], ["updated_at", "2019-07-31 21:30:20.783527"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jerry Atrics"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Jerry Atrics"], ["created_at", "2019-07-31 21:30:20.785654"], ["updated_at", "2019-07-31 21:30:20.785654"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Sal Minella"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Sal Minella"], ["created_at", "2019-07-31 21:30:20.787912"], ["updated_at", "2019-07-31 21:30:20.787912"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Didi Reelydoit"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Didi Reelydoit"], ["created_at", "2019-07-31 21:30:20.807321"], ["updated_at", "2019-07-31 21:30:20.807321"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Emerald Stone"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Emerald Stone"], ["created_at", "2019-07-31 21:30:20.810362"], ["updated_at", "2019-07-31 21:30:20.810362"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Dee Kay"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at", "score") VALUES (?, ?, ?, ?)[0m  [["name", "Dee Kay"], ["created_at", "2019-07-31 21:30:20.813329"], ["updated_at", "2019-07-31 21:30:20.813329"], ["score", 0]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Water"], ["created_at", "2019-07-31 21:30:20.821820"], ["updated_at", "2019-07-31 21:30:20.821820"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/droplet_1f4a7.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Honey"], ["created_at", "2019-07-31 21:30:20.824188"], ["updated_at", "2019-07-31 21:30:20.824188"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/honey-pot_1f36f.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Rice"], ["created_at", "2019-07-31 21:30:20.826402"], ["updated_at", "2019-07-31 21:30:20.826402"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/cooked-rice_1f35a.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Flour"], ["created_at", "2019-07-31 21:30:20.829134"], ["updated_at", "2019-07-31 21:30:20.829134"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/ear-of-rice_1f33e.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Egg"], ["created_at", "2019-07-31 21:30:20.831346"], ["updated_at", "2019-07-31 21:30:20.831346"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/egg_1f95a.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Sweet Potato"], ["created_at", "2019-07-31 21:30:20.833768"], ["updated_at", "2019-07-31 21:30:20.833768"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/roasted-sweet-potato_1f360.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Pork"], ["created_at", "2019-07-31 21:30:20.835582"], ["updated_at", "2019-07-31 21:30:20.835582"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/pig-face_1f437.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Eggplant"], ["created_at", "2019-07-31 21:30:20.838270"], ["updated_at", "2019-07-31 21:30:20.838270"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/aubergine_1f346.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Shrimp"], ["created_at", "2019-07-31 21:30:20.840010"], ["updated_at", "2019-07-31 21:30:20.840010"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/shrimp_1f990.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Seaweed"], ["created_at", "2019-07-31 21:30:20.841839"], ["updated_at", "2019-07-31 21:30:20.841839"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/herb_1f33f.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Tuna"], ["created_at", "2019-07-31 21:30:20.843596"], ["updated_at", "2019-07-31 21:30:20.843596"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/fish_1f41f.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Salmon"], ["created_at", "2019-07-31 21:30:20.845852"], ["updated_at", "2019-07-31 21:30:20.845852"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/fish_1f41f.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Shoyu"], ["created_at", "2019-07-31 21:30:20.848112"], ["updated_at", "2019-07-31 21:30:20.848112"], ["img_url", "https://cdn.emojidex.com/emoji/seal/soy_sauce.png?1453371398"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Chicken"], ["created_at", "2019-07-31 21:30:20.850566"], ["updated_at", "2019-07-31 21:30:20.850566"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/chicken_1f414.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Sugar"], ["created_at", "2019-07-31 21:30:20.852788"], ["updated_at", "2019-07-31 21:30:20.852788"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/candy_1f36c.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Cucumber"], ["created_at", "2019-07-31 21:30:20.854679"], ["updated_at", "2019-07-31 21:30:20.854679"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/cucumber_1f952.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Salt"], ["created_at", "2019-07-31 21:30:20.856498"], ["updated_at", "2019-07-31 21:30:20.856498"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/salt-shaker_1f9c2.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Bread"], ["created_at", "2019-07-31 21:30:20.858169"], ["updated_at", "2019-07-31 21:30:20.858169"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/baguette-bread_1f956.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Mayo"], ["created_at", "2019-07-31 21:30:20.860112"], ["updated_at", "2019-07-31 21:30:20.860112"], ["img_url", "https://cdn.emojidex.com/emoji/seal/mayonnaise.png?1453371312"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Dashi"], ["created_at", "2019-07-31 21:30:20.861691"], ["updated_at", "2019-07-31 21:30:20.861691"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/bowl-with-spoon_1f963.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Miso"], ["created_at", "2019-07-31 21:30:20.863149"], ["updated_at", "2019-07-31 21:30:20.863149"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/bowl-with-spoon_1f963.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Soybeans"], ["created_at", "2019-07-31 21:30:20.864890"], ["updated_at", "2019-07-31 21:30:20.864890"], ["img_url", "https://mpng.pngfly.com/20180218/ldw/kisspng-edamame-soy-milk-korean-cuisine-soybean-clip-art-soybean-cliparts-5a897bbb824105.8640147915189595475335.jpg"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Daikon"], ["created_at", "2019-07-31 21:30:20.866598"], ["updated_at", "2019-07-31 21:30:20.866598"], ["img_url", "https://previews.123rf.com/images/primulakat/primulakat1611/primulakat161100040/68354990-parsnip-colored-botanical-illustration-product-to-prepare-delicious-and-healthy-food-isolated-on-whi.jpg"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.9ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Onion"], ["created_at", "2019-07-31 21:30:20.868322"], ["updated_at", "2019-07-31 21:30:20.868322"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/emojione/211/onion_1f9c5.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Garlic"], ["created_at", "2019-07-31 21:30:20.870683"], ["updated_at", "2019-07-31 21:30:20.870683"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/emojipedia/181/garlic_1f9c4.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Yuzu"], ["created_at", "2019-07-31 21:30:20.872289"], ["updated_at", "2019-07-31 21:30:20.872289"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/lemon_1f34b.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Peanut"], ["created_at", "2019-07-31 21:30:20.873860"], ["updated_at", "2019-07-31 21:30:20.873860"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/peanuts_1f95c.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Milk"], ["created_at", "2019-07-31 21:30:20.875322"], ["updated_at", "2019-07-31 21:30:20.875322"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/glass-of-milk_1f95b.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Grapes"], ["created_at", "2019-07-31 21:30:20.876872"], ["updated_at", "2019-07-31 21:30:20.876872"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/grapes_1f347.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Coconut"], ["created_at", "2019-07-31 21:30:20.878424"], ["updated_at", "2019-07-31 21:30:20.878424"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/coconut_1f965.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Komatsuna"], ["created_at", "2019-07-31 21:30:20.879966"], ["updated_at", "2019-07-31 21:30:20.879966"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/leafy-green_1f96c.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Tomato"], ["created_at", "2019-07-31 21:30:20.881883"], ["updated_at", "2019-07-31 21:30:20.881883"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/tomato_1f345.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Cheese"], ["created_at", "2019-07-31 21:30:20.883623"], ["updated_at", "2019-07-31 21:30:20.883623"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/cheese-wedge_1f9c0.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Avocado"], ["created_at", "2019-07-31 21:30:20.885464"], ["updated_at", "2019-07-31 21:30:20.885464"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/avocado_1f951.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Red pepper"], ["created_at", "2019-07-31 21:30:20.887545"], ["updated_at", "2019-07-31 21:30:20.887545"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/hot-pepper_1f336.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Red wine"], ["created_at", "2019-07-31 21:30:20.889286"], ["updated_at", "2019-07-31 21:30:20.889286"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/wine-glass_1f377.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Tako"], ["created_at", "2019-07-31 21:30:20.891019"], ["updated_at", "2019-07-31 21:30:20.891019"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/octopus_1f419.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Carrot"], ["created_at", "2019-07-31 21:30:20.893330"], ["updated_at", "2019-07-31 21:30:20.893330"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/carrot_1f955.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Banana"], ["created_at", "2019-07-31 21:30:20.895526"], ["updated_at", "2019-07-31 21:30:20.895526"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/banana_1f34c.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Broccoli"], ["created_at", "2019-07-31 21:30:20.897061"], ["updated_at", "2019-07-31 21:30:20.897061"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/broccoli_1f966.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Peach"], ["created_at", "2019-07-31 21:30:20.898529"], ["updated_at", "2019-07-31 21:30:20.898529"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/peach_1f351.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Kiwi"], ["created_at", "2019-07-31 21:30:20.900412"], ["updated_at", "2019-07-31 21:30:20.900412"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/kiwifruit_1f95d.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Potato"], ["created_at", "2019-07-31 21:30:20.901963"], ["updated_at", "2019-07-31 21:30:20.901963"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/potato_1f954.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Orange"], ["created_at", "2019-07-31 21:30:20.903542"], ["updated_at", "2019-07-31 21:30:20.903542"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/tangerine_1f34a.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Cherry"], ["created_at", "2019-07-31 21:30:20.905110"], ["updated_at", "2019-07-31 21:30:20.905110"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/cherries_1f352.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Corn"], ["created_at", "2019-07-31 21:30:20.907253"], ["updated_at", "2019-07-31 21:30:20.907253"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/ear-of-maize_1f33d.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Mushroom"], ["created_at", "2019-07-31 21:30:20.908742"], ["updated_at", "2019-07-31 21:30:20.908742"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/mushroom_1f344.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Apple"], ["created_at", "2019-07-31 21:30:20.910337"], ["updated_at", "2019-07-31 21:30:20.910337"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/red-apple_1f34e.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Strawberry"], ["created_at", "2019-07-31 21:30:20.911718"], ["updated_at", "2019-07-31 21:30:20.911718"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/strawberry_1f353.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Watermelon"], ["created_at", "2019-07-31 21:30:20.913233"], ["updated_at", "2019-07-31 21:30:20.913233"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/watermelon_1f349.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[36mIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "ingredients" ("name", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?)[0m  [["name", "Mango"], ["created_at", "2019-07-31 21:30:20.914857"], ["updated_at", "2019-07-31 21:30:20.914857"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/mango_1f96d.png"]]
+  ↳ db/seeds.rb:73
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:73
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tea"], ["points", -10], ["created_at", "2019-07-31 21:30:20.924663"], ["updated_at", "2019-07-31 21:30:20.924663"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/teacup-without-handle_1f375.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sake"], ["points", 1250], ["created_at", "2019-07-31 21:30:20.928270"], ["updated_at", "2019-07-31 21:30:20.928270"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/sake-bottle-and-cup_1f376.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Moon Cake"], ["points", 50], ["created_at", "2019-07-31 21:30:20.930501"], ["updated_at", "2019-07-31 21:30:20.930501"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/moon-cake_1f96e.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dumplings"], ["points", 29], ["created_at", "2019-07-31 21:30:20.932393"], ["updated_at", "2019-07-31 21:30:20.932393"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/dumpling_1f95f.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tempura"], ["points", 30], ["created_at", "2019-07-31 21:30:20.934208"], ["updated_at", "2019-07-31 21:30:20.934208"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/fried-shrimp_1f364.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Dango"], ["points", 6], ["created_at", "2019-07-31 21:30:20.935965"], ["updated_at", "2019-07-31 21:30:20.935965"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/dango_1f361.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sushi"], ["points", 90], ["created_at", "2019-07-31 21:30:20.937814"], ["updated_at", "2019-07-31 21:30:20.937814"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/sushi_1f363.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Chicken Teriyaki"], ["points", 53], ["created_at", "2019-07-31 21:30:20.939931"], ["updated_at", "2019-07-31 21:30:20.939931"], ["img_url", "https://images-na.ssl-images-amazon.com/images/I/41igAlBClxL._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_SCLZZZZZZZ_.jpg"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sukiyaki"], ["points", -3], ["created_at", "2019-07-31 21:30:20.941691"], ["updated_at", "2019-07-31 21:30:20.941691"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/pot-of-food_1f372.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Century Egg"], ["points", 0], ["created_at", "2019-07-31 21:30:20.943517"], ["updated_at", "2019-07-31 21:30:20.943517"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/egg_1f95a.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kare-raisu"], ["points", 900], ["created_at", "2019-07-31 21:30:20.945353"], ["updated_at", "2019-07-31 21:30:20.945353"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/curry-and-rice_1f35b.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Senbei"], ["points", 50], ["created_at", "2019-07-31 21:30:20.947420"], ["updated_at", "2019-07-31 21:30:20.947420"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/rice-cracker_1f358.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kakigori"], ["points", 60], ["created_at", "2019-07-31 21:30:20.949586"], ["updated_at", "2019-07-31 21:30:20.949586"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/shaved-ice_1f367.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Mochi"], ["points", 70], ["created_at", "2019-07-31 21:30:20.951423"], ["updated_at", "2019-07-31 21:30:20.951423"], ["img_url", "http://icons.iconarchive.com/icons/sukritact/japanese-food/256/Mochi-icon.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Onigiri"], ["points", 80], ["created_at", "2019-07-31 21:30:20.953664"], ["updated_at", "2019-07-31 21:30:20.953664"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/rice-ball_1f359.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Oden"], ["points", 20], ["created_at", "2019-07-31 21:30:20.955409"], ["updated_at", "2019-07-31 21:30:20.955409"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/oden_1f362.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Miso Soup"], ["points", 40], ["created_at", "2019-07-31 21:30:20.957199"], ["updated_at", "2019-07-31 21:30:20.957199"], ["img_url", "http://icons.iconarchive.com/icons/sukritact/japanese-food/256/Miso-Soup-icon.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.4ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Salmon Teriyaki"], ["points", 80], ["created_at", "2019-07-31 21:30:20.959018"], ["updated_at", "2019-07-31 21:30:20.959018"], ["img_url", "http://icons.iconarchive.com/icons/sukritact/japanese-food/256/Salmon-Teriyaki-icon.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sashimi"], ["points", 100], ["created_at", "2019-07-31 21:30:20.960813"], ["updated_at", "2019-07-31 21:30:20.960813"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/sushi_1f363.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Purin"], ["points", 120], ["created_at", "2019-07-31 21:30:20.962295"], ["updated_at", "2019-07-31 21:30:20.962295"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/custard_1f36e.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.3ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Takoyaki"], ["points", 200], ["created_at", "2019-07-31 21:30:20.964047"], ["updated_at", "2019-07-31 21:30:20.964047"], ["img_url", "https://png.pngtree.com/png-vector/20190130/ourmid/pngtree-hand-drawn-style-food-octopus-materialfoodfood-materialmenucookingcooking-vegetableschinese-png-image_681426.jpg"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ramen"], ["points", 110], ["created_at", "2019-07-31 21:30:20.965791"], ["updated_at", "2019-07-31 21:30:20.965791"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/steaming-bowl_1f35c.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kobe Beef"], ["points", 1510], ["created_at", "2019-07-31 21:30:20.967770"], ["updated_at", "2019-07-31 21:30:20.967770"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/cut-of-meat_1f969.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Supearibu"], ["points", 80], ["created_at", "2019-07-31 21:30:20.969469"], ["updated_at", "2019-07-31 21:30:20.969469"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/meat-on-bone_1f356.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Supagetti"], ["points", 110], ["created_at", "2019-07-31 21:30:20.971390"], ["updated_at", "2019-07-31 21:30:20.971390"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/spaghetti_1f35d.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Edamame"], ["points", 10], ["created_at", "2019-07-31 21:30:20.972844"], ["updated_at", "2019-07-31 21:30:20.972844"], ["img_url", "https://banner2.kisspng.com/20180306/goq/kisspng-soybean-royalty-free-clip-art-stripped-peas-5a9ea2ab0e57b1.2623638315203457710588.jpg"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fortune Cookie"], ["points", 110], ["created_at", "2019-07-31 21:30:20.974335"], ["updated_at", "2019-07-31 21:30:20.974335"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/fortune-cookie_1f960.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Sunomono"], ["points", 310], ["created_at", "2019-07-31 21:30:20.976080"], ["updated_at", "2019-07-31 21:30:20.976080"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/green-salad_1f957.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tandori"], ["points", 1180], ["created_at", "2019-07-31 21:30:20.977577"], ["updated_at", "2019-07-31 21:30:20.977577"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/emojidex/112/stuffed-flatbread_1f959.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Fried Chicken"], ["points", 11], ["created_at", "2019-07-31 21:30:20.979190"], ["updated_at", "2019-07-31 21:30:20.979190"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/poultry-leg_1f357.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:109
+  [1m[36mRecipe Create (0.2ms)[0m  [1m[32mINSERT INTO "recipes" ("name", "points", "created_at", "updated_at", "img_url") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Cake"], ["points", 10], ["created_at", "2019-07-31 21:30:20.980892"], ["updated_at", "2019-07-31 21:30:20.980892"], ["img_url", "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/facebook/200/birthday-cake_1f382.png"]]
+  ↳ db/seeds.rb:109
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:109
+Started GET "/users" for ::1 at 2019-07-31 14:32:02 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniemartinoli/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 11ms (Views: 7.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2019-07-31 14:32:10 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Bob", "score"=>0, "user"=>{"name"=>"Bob", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Bob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Bob"], ["created_at", "2019-07-31 21:32:10.303406"], ["updated_at", "2019-07-31 21:32:10.303406"]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/users" for ::1 at 2019-07-31 14:36:52 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"", "score"=>0, "user"=>{"name"=>"", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 95ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-07-31 14:36:56 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2019-07-31 14:37:06 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"", "score"=>0, "user"=>{"name"=>"", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-07-31 14:41:01 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-07-31 14:43:02 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2019-07-31 14:43:08 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"", "score"=>0, "user"=>{"name"=>"", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-07-31 14:43:15 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2019-07-31 14:43:22 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Bob", "score"=>0, "user"=>{"name"=>"Bob", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Bob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-07-31 14:43:29 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-07-31 14:43:39 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2019-07-31 14:43:46 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Danie", "score"=>0, "user"=>{"name"=>"Danie", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Danie"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Danie"], ["created_at", "2019-07-31 21:43:46.317552"], ["updated_at", "2019-07-31 21:43:46.317552"]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users" for ::1 at 2019-07-31 14:51:12 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2019-07-31 14:51:19 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Bob", "score"=>0, "user"=>{"name"=>"Bob", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Bob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2019-07-31 14:51:27 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Danie", "score"=>0, "user"=>{"name"=>"Danie", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Danie"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-07-31 14:51:35 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2019-07-31 14:59:58 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"", "score"=>0, "user"=>{"name"=>"", "score"=>0}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2019-07-31 15:00:05 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Tom", "score"=>0, "user"=>{"name"=>"Tom", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Tom"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tom"], ["created_at", "2019-07-31 22:00:05.307428"], ["updated_at", "2019-07-31 22:00:05.307428"]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users" for ::1 at 2019-07-31 15:33:49 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2019-07-31 15:33:55 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Danie", "score"=>0, "user"=>{"name"=>"Danie", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Danie"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2019-07-31 15:34:05 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Bob", "score"=>0, "user"=>{"name"=>"Bob", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Bob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-07-31 15:34:21 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.3ms)
+
+
