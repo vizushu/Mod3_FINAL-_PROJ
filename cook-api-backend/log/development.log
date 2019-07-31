@@ -4827,3 +4827,80 @@ Processing by UsersController#index as */*
 Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.3ms)
 
 
+Started POST "/users" for ::1 at 2019-07-31 15:39:16 -0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/daniemartinoli/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"danie", "score"=>0, "user"=>{"name"=>"danie", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "danie"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "danie"], ["created_at", "2019-07-31 22:39:16.690223"], ["updated_at", "2019-07-31 22:39:16.690223"]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users" for ::1 at 2019-07-31 16:03:36 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 40ms (Views: 39.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2019-07-31 16:09:10 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Jawn", "score"=>0, "user"=>{"name"=>"Jawn", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Jawn"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Jawn"], ["created_at", "2019-07-31 23:09:10.172682"], ["updated_at", "2019-07-31 23:09:10.172682"]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/users" for ::1 at 2019-07-31 16:12:57 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Bob", "score"=>0, "user"=>{"name"=>"Bob", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Bob"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 914ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2019-07-31 16:14:05 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Phill", "score"=>0, "user"=>{"name"=>"Phill", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Phill"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Phill"], ["created_at", "2019-07-31 23:14:05.626841"], ["updated_at", "2019-07-31 23:14:05.626841"]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users" for ::1 at 2019-07-31 16:16:37 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Turd", "score"=>0, "user"=>{"name"=>"Turd", "score"=>0}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "Turd"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Turd"], ["created_at", "2019-07-31 23:16:37.842746"], ["updated_at", "2019-07-31 23:16:37.842746"]]
+  ↳ app/controllers/users_controller.rb:16
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:16
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+

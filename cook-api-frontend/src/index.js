@@ -5,84 +5,92 @@ const INGREDIENT_URL = `${BASE_URL}/ingredients`
 
 // Waiting for DOM to render login
 document.addEventListener('DOMContentLoaded', () => {
-    loginPage()
-    userScore()
+    // loginPage()
+    signUp()
+    // userScore()
   })
 
   getUser = () => {
       return fetch(USER_URL)
       .then(res => res.json())
-      .then(json => userScore(json))
+      .then(json => json)
     };
+// This is login form
+// loginPage = () => {
+//     const main = document.getElementById('main-wrapper')
+//     const div1 = document.createElement('div')
+//     div1.className = 'Login'
+//     const form1 = document.createElement('form')
+//     form1.className = 'Login'
+//     const header1 = document.createElement('h2')
+//     header1.innerText = "Login"
+//     const input1 = document.createElement('input')
+//     input1.setAttribute("placeholder", "Enter Your Username")
+//     input1.setAttribute("type", "text")
+//     const submitButton = document.createElement('button')
+//     submitButton.innerText = "Log in"
+//     submitButton.className = 'Submit'
+//       submitButton.setAttribute("type", "submit")
+//     const signUpLink = document.createElement('p')
+//     signUpLink.innerText = "Sign Up Here!"
+//
+//
+//     main.appendChild(div1)
+//     div1.appendChild(form1)
+//     form1.appendChild(header1)
+//     form1.appendChild(input1)
+//     form1.appendChild(submitButton)
+//     div1.appendChild(signUpLink)
+//
+//     form1.addEventListener("submit", (e) => {
+//       e.preventDefault()
+//       let userName = e.target[0].value;
+//       getUser()
+//       .then(data => userLogin(data, userName))
+//     })
+//   }
+    // linkSpan.addEventListener("click", () => {
+    //     switchLoginForm(form2, form1)
+    //     signUpLink.style.visibility = "hidden";
+    // })
 
-loginPage = () => {
-    const main = document.getElementById('main-wrapper')
-    const div1 = document.createElement('div')
-    const form1 = document.createElement('form')
-    const form2 = document.createElement('form')
-    const header1 = document.createElement('h2')
-    const header2 = document.createElement('h2')
-    const input1 = document.createElement('input')
-    const input2 = document.createElement('input')
-    const submitButton = document.createElement('button')
-    const signUpButton = document.createElement('button')
-    const signUpLink = document.createElement('p')
-    const linkSpan = document.createElement('span')
+// This is sign up form
 
-    header1.innerText = "Login"
-    header2.innerText = "Sign up"
-    submitButton.innerText = "Log in"
-    signUpButton.innerText = "Sign Up"
-    signUpLink.innerText = "New User "
-    linkSpan.innerText = "Sign Up here!"
+signUp = () => {
+const main = document.getElementById('main-wrapper')
+const div1 = document.createElement('div')
+const form2 = document.createElement('form')
+form2.className = 'Sign Up'
+const header2 = document.createElement('h2')
+header2.innerText = "Sign up"
+const input2 = document.createElement('input')
+input2.setAttribute("placeholder", "Enter A Username")
+const signUpButton = document.createElement('button')
+signUpButton.innerText = "Sign Up"
+signUpButton.className = 'Submit'
+const loginLink = document.createElement('p')
 
-    div1.className = 'Login'
-    form1.className = 'Login'
-    form2.className = 'Hidden'
-    submitButton.className = 'Submit'
-    signUpButton.className = 'Submit'
+main.appendChild(div1)
+div1.appendChild(form2)
+form2.appendChild(header2)
+form2.appendChild(input2)
+form2.appendChild(signUpButton)
+div1.appendChild(loginLink)
 
-    input1.setAttribute("placeholder", "Enter Your Username")
-    input1.setAttribute("type", "text")
-    input2.setAttribute("placeholder", "Enter A Username")
-    submitButton.setAttribute("type", "submit")
+form2.addEventListener("submit", (e) => {
+    e.preventDefault()
+    let name = e.target[0].value;
+    userSignup(name)
+  })
+}
 
-    main.appendChild(div1)
-    div1.appendChild(form1)
-    div1.appendChild(form2)
-    form1.appendChild(header1)
-    form1.appendChild(input1)
-    form1.appendChild(submitButton)
-    form2.appendChild(header2)
-    form2.appendChild(input2)
-    form2.appendChild(signUpButton)
-    div1.appendChild(signUpLink)
-    signUpLink.appendChild(linkSpan)
-
-    form1.addEventListener("submit", (e) => {
-      e.preventDefault()
-      let userName = e.target[0].value;
-      getUser()
-      .then(data => userLogin(data, userName))
-    })
-
-    form2.addEventListener("submit", (e) => {
-        e.preventDefault()
-        let name = e.target[0].value;
-        userSignup(name)
-      })
-
-    linkSpan.addEventListener("click", () => {
-        switchLoginForm(form2, form1)
-        signUpLink.className = "hidden"
-    })
 
 // This is the show user function
 userLogin = (json, userName) => {
   let exsistsInDb = false
   for (var item in json) {
     if(json[item].name == userName) {
-      userGame()
+      userGame(json)
       exsistsInDb = true
     }
    };
@@ -108,12 +116,9 @@ userSignup = (name, score= 0) => {
     .then(json => {
       if (json.name == name) {
         userGame(json)
-        document.getElementById('main-wrapper').innerHTML = '';
-        console.log('redirect to userGame later')
       }
       else {
         displayErrorMessage("That username is already taken!")
-        console.log('redirect to loginpage later')
       }
     })
   }
@@ -165,12 +170,12 @@ drop = (ev) => {
 }
 
 // WE NEED A FUNCTION TO SHOW THE USER'S SCORE
-userScore = (json) => {
-  // let currentScore = json.score
-  let userScore = document.getElementById("pointCard")
-  userScore.innerText = 0
-console.log(json)
-}
+// userScore = (json) => {
+//   // let currentScore = json.score
+//   let userScore = document.getElementById("pointCard")
+//   userScore.innerText = 0
+// console.log(json)
+// }
 // WE NEED A FUNCTION TO SHOW TOP 5 USER'S SCORE
 
 // WE NEED A FUNCTION TO SHOW INGREDIENTS PICTURES
@@ -179,7 +184,6 @@ console.log(json)
 
 // WE NEED A FUNCTION TO SHOW CREATED RECIPE
 
-}
 
 // This function just swaps the login/signup forms
 switchLoginForm = (show, hide) => {
