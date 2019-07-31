@@ -89,9 +89,14 @@
   background-image: url(./images/loginBackgroung.jpg);
 }
 
-#divIngredient{
+#divDrop{
   width: 70px;
   height: 70px;
   padding: 10px;
-  border: 1px solid #aaaaaa;
+  border: 1px solid #050505;
+}
+
+.img {
+  width : 30px;
+  height : 30px;
 }
