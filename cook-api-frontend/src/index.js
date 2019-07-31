@@ -124,14 +124,44 @@ userGame = (json) => {
 document.getElementById('main-wrapper').innerHTML = '';
 const main = document.getElementById('main-wrapper')
 const div = document.createElement('div')
-const ul = document.createElement('ul')
-const li = document.createElement('li')
+// const ul = document.createElement('ul')
+// const li = document.createElement('li')
 const divIngredient = document.createElement('div')
 
 main.appendChild(div)
 div.appendChild(divIngredient)
-div.appendChild(ul)
-ul.appendChild(li)
+// div.appendChild(ul)
+// ul.appendChild(li)
+
+const divDrop = document.createElement('div')
+divDrop.id = "divDrop"
+divDrop.setAttribute("ondrop", "drop(event)")
+divDrop.setAttribute("ondragover", "allowDrop(event)")
+divIngredient.appendChild(divDrop)
+const img = document.createElement('img')
+img.id = "drag1"
+img.setAttribute("draggable", "true")
+img.setAttribute("ondragstart", "drag(event)")
+img.setAttribute("width", "70")
+img.setAttribute("height", "70")
+
+img.src = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/bento-box_1f371.png"
+divIngredient.appendChild(img)
+
+// WE NEED A FUNCTION FOR DRAG AND DROP
+allowDrop = (ev) => {
+  ev.preventDefault();
+  }
+
+drag = (ev) => {
+  ev.dataTransfer.setData("text", ev.target.id);
+  }
+
+drop = (ev) => {
+  ev.preventDefault();
+  let data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+  }
 }
 
 // WE NEED A FUNCTION TO SHOW THE USER'S SCORE
@@ -140,20 +170,7 @@ ul.appendChild(li)
 
 // WE NEED A FUNCTION TO SHOW INGREDIENTS PICTURES
 
-// WE NEED A FUNCTION FOR DRAG AND DROP
-allowDrop = (ev) => {
-  ev.preventDefault();
-}
 
-drag = (ev) => {
-  ev.dataTransfer.setData("text", ev.target.id);
-}
-
-drop = (ev) => {
-  ev.preventDefault();
-  let data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
-}
 
 // WE NEED A FUNCTION TO SHOW CREATED RECIPE
 
