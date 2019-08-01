@@ -164,6 +164,7 @@ userSignup = (name, score= 0) => {
     })
     .then(res => res.json())
     .then(json => {
+<<<<<<< HEAD
       getIngredients()
       .then(ingredients => userGame(ingredients, json))
       // if (json.name == name) {
@@ -172,12 +173,21 @@ userSignup = (name, score= 0) => {
       // else {
       //   displayErrorMessage("That username is already taken!")
       // }
+=======
+      if (json.name == name) {
+        getIngredients()
+        .then(ingredients => userGame(ingredients, json))
+      }
+      else {
+        displayErrorMessage("That username is already taken!")
+      }
+>>>>>>> RJ
     })
   }
 
-
 // This function login the user to the game
 userGame = (ingredients, json) => {
+<<<<<<< HEAD
 // clearing the HTML
 document.body.style.backgroundImage = "url()";
 document.innerHTML = '';
@@ -187,16 +197,27 @@ main.innerHTML = '';
 // for (i = 0; i < ingredients.length; i++) {
 //   console.log(ingredients[i])
 // }
+=======
+document.body.innerHTML = '';
+
+const body = document.querySelector('body')
+const mainDiv = document.createElement('div')
+body.appendChild(mainDiv)
+const outerDiv = document.createElement('div')
+const main = document.createElement('div')
+body.appendChild(outerDiv)
+outerDiv.className = 'scrolling-wrapper'
+outerDiv.appendChild(main)
+>>>>>>> RJ
 
 ingredients.forEach(element => {
-  let image = element.img_url
+  let img = element.img_url
   let name = element.name
-  let div = `<h2>${name}</h2><img src=${image}>`
+  let div = `<h2>${name}</h2><img src=${img}>`
   let divTag = document.createElement('div')
   divTag.innerHTML = div
   main.appendChild(divTag)
 })
-
 
 const div = document.createElement('div')
 const divIngredient = document.createElement('div')
@@ -209,17 +230,15 @@ divDrop.id = "divDrop"
 divDrop.setAttribute("ondrop", "drop(event)")
 divDrop.setAttribute("ondragover", "allowDrop(event)")
 divIngredient.appendChild(divDrop)
-const img = document.createElement('img')
+
 img.id = "drag1"
 img.setAttribute("draggable", "true")
 img.setAttribute("ondragstart", "drag(event)")
 img.setAttribute("width", "70")
 img.setAttribute("height", "70")
-
-img.src = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/bento-box_1f371.png"
 divIngredient.appendChild(img)
 
-// WE NEED A FUNCTION FOR DRAG AND DROP
+// This function is for drag and drop
 allowDrop = (ev) => {
   ev.preventDefault();
   }
