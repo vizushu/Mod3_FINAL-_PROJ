@@ -290,6 +290,7 @@ closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
   }
 
+
 // Login = () => {
 // // create the elements
 // let div = document.createElement('div'),
@@ -372,3 +373,4 @@ closeNav = () => {
 // // append main-div on the body
 // document.body.appendChild(div);
 // }
+
