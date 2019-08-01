@@ -5,8 +5,10 @@ const INGREDIENT_URL = `${BASE_URL}/ingredients`
 
 // Waiting for DOM to render login
 document.addEventListener('DOMContentLoaded', () => {
-    // loginPage()
+    loginPage()
     signUp()
+    formSwitcherSign()
+    formSwitcherLogin()
     // userScore()
   })
 
@@ -16,43 +18,40 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(json => json)
     };
 // This is login form
-// loginPage = () => {
-//     const main = document.getElementById('main-wrapper')
-//     const div1 = document.createElement('div')
-//     div1.className = 'Login'
-//     const form1 = document.createElement('form')
-//     form1.className = 'Login'
-//     const header1 = document.createElement('h2')
-//     header1.innerText = "Login"
-//     const input1 = document.createElement('input')
-//     input1.setAttribute("placeholder", "Enter Your Username")
-//     input1.setAttribute("type", "text")
-//     const submitButton = document.createElement('button')
-//     submitButton.innerText = "Log in"
-//     submitButton.className = 'Submit'
-//       submitButton.setAttribute("type", "submit")
-//     const signUpLink = document.createElement('p')
-//     signUpLink.innerText = "Sign Up Here!"
-//
-//
-//     main.appendChild(div1)
-//     div1.appendChild(form1)
-//     form1.appendChild(header1)
-//     form1.appendChild(input1)
-//     form1.appendChild(submitButton)
-//     div1.appendChild(signUpLink)
-//
-//     form1.addEventListener("submit", (e) => {
-//       e.preventDefault()
-//       let userName = e.target[0].value;
-//       getUser()
-//       .then(data => userLogin(data, userName))
-//     })
-//   }
-    // linkSpan.addEventListener("click", () => {
-    //     switchLoginForm(form2, form1)
-    //     signUpLink.style.visibility = "hidden";
-    // })
+loginPage = () => {
+    const main = document.getElementById('main-wrapper')
+    const div1 = document.createElement('div')
+    const form1 = document.createElement('form')
+    form1.className = 'login'
+    div1.className = 'login visible'
+    const header1 = document.createElement('h2')
+    header1.innerText = "Login"
+    const input1 = document.createElement('input')
+    input1.setAttribute("placeholder", "Enter Your Username")
+    input1.setAttribute("type", "text")
+    const submitButton = document.createElement('button')
+    submitButton.innerText = "Log in"
+    submitButton.className = 'Submit'
+      submitButton.setAttribute("type", "submit")
+    const signUpLink = document.createElement('button')
+    signUpLink.innerText = "Sign Up Here!"
+    signUpLink.className = 'sign-in-button'
+
+    main.appendChild(div1)
+    div1.appendChild(form1)
+    form1.appendChild(header1)
+    form1.appendChild(input1)
+    form1.appendChild(submitButton)
+    div1.appendChild(signUpLink)
+
+    form1.addEventListener("submit", (e) => {
+      e.preventDefault()
+      let userName = e.target[0].value;
+      getUser()
+      .then(data => userLogin(data, userName))
+    })
+  }
+
 
 // This is sign up form
 
@@ -60,7 +59,8 @@ signUp = () => {
 const main = document.getElementById('main-wrapper')
 const div1 = document.createElement('div')
 const form2 = document.createElement('form')
-form2.className = 'Sign Up'
+form2.className = 'sign Up'
+div1.className = 'sign-up hidden'
 const header2 = document.createElement('h2')
 header2.innerText = "Sign up"
 const input2 = document.createElement('input')
@@ -68,7 +68,9 @@ input2.setAttribute("placeholder", "Enter A Username")
 const signUpButton = document.createElement('button')
 signUpButton.innerText = "Sign Up"
 signUpButton.className = 'Submit'
-const loginLink = document.createElement('p')
+const loginLink = document.createElement('button')
+loginLink.innerText = "Login Here!"
+loginLink.className = 'login-button'
 
 main.appendChild(div1)
 div1.appendChild(form2)
@@ -84,6 +86,34 @@ form2.addEventListener("submit", (e) => {
   })
 }
 
+// this is the form function
+formSwitcherSign = () => {
+  let mainElement = document.getElementById('main-wrapper')
+  let sButton = document.querySelector('.sign-in-button')
+    sButton.addEventListener("click", (ev) => {
+      if (mainElement.children[2].classList.contains('visible')){
+        mainElement.children[2].classList.add('hidden')
+        mainElement.children[2].classList.remove('visible')
+        mainElement.children[3].classList.add('visible')
+        mainElement.children[3].classList.remove('hidden')
+      }
+
+})
+}
+
+formSwitcherLogin = () => {
+  let mainElement = document.getElementById('main-wrapper')
+  let lButton = document.querySelector('.login-button')
+    lButton.addEventListener("click", (ev) => {
+      if (mainElement.children[3].classList.contains('visible')){
+        mainElement.children[3].classList.add('hidden')
+        mainElement.children[3].classList.remove('visible')
+        mainElement.children[2].classList.add('visible')
+        mainElement.children[2].classList.remove('hidden')
+      }
+
+})
+}
 
 // This is the show user function
 userLogin = (json, userName) => {

@@ -51,9 +51,12 @@
     margin-left: 50px;
   }
 
-  #main-contianer {
-    transition: margin-left .5s;
-    padding: 20px;
+  #main-wrapper {
+    background-color: lightblue;
+    position: left;
+    transition: margin-left 3450px;
+    padding: 10px;
+
   }
 
   @media screen and (max-height: 450px) {
@@ -85,8 +88,20 @@
     border-radius: 40px;
   }
 
-.body {
+body {
   background-image: url(./images/loginBackgroung.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 10% 10% 10%;
+
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 #divDrop{
