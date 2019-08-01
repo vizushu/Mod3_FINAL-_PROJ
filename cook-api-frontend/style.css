@@ -70,3 +70,70 @@ header {
     font-size: 36px;
     margin-left: 50px;
   }
+<<<<<<< HEAD
+=======
+
+  #main-wrapper {
+    position: right;
+    transition: margin-left 3450px;
+    padding: 10px;
+
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .model {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .model-content {
+    background-color:red;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 40px;
+  }
+
+body {
+  background-image: url(./images/loginBackgroung.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 120%;
+
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+#divDrop{
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #050505;
+}
+
+.img {
+  width : 30px;
+  height : 30px;
+}
+>>>>>>> 150569bea4608b530faa84fa5a194ba0d81cec1a
