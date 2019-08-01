@@ -5,6 +5,9 @@ const INGREDIENT_URL = `${BASE_URL}/ingredients`
 
 // Waiting for DOM to render login
 document.addEventListener('DOMContentLoaded', () => {
+    localStorage.getItem('input') ?
+    getUser().then(data => userLogin(data, localStorage.getItem('input')))
+    :
     loginPage()
     signUp()
     formSwitcherSign()
@@ -17,24 +20,25 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(res => res.json())
       .then(json => json)
     };
-  
+
   getIngredients = () => {
-    console.log('yoo')
     return fetch(INGREDIENT_URL)
     .then(res => res.json())
     .then(json => json)
   };
-    
+
 // This is login form
 loginPage = () => {
     const main = document.getElementById('main-wrapper')
     const div1 = document.createElement('div')
     const form1 = document.createElement('form')
     form1.className = 'login'
+    form1.name = 'input'
     div1.className = 'login visible'
     const header1 = document.createElement('h2')
     header1.innerText = "Login"
     const input1 = document.createElement('input')
+    input1.id = 'input'
     input1.setAttribute("placeholder", "Enter Your Username")
     input1.setAttribute("type", "text")
     const submitButton = document.createElement('button')
@@ -55,8 +59,7 @@ loginPage = () => {
     form1.addEventListener("submit", (e) => {
       e.preventDefault()
       let userName = e.target[0].value;
-      getUser()
-      .then(data => userLogin(data, userName))
+      getUser().then(data => userLogin(data, userName))
     })
   }
 
@@ -123,18 +126,28 @@ formSwitcherLogin = () => {
 
 // This is the show user function
 userLogin = (json, userName) => {
+  console.log(json)
   let exsistsInDb = false
   for (var item in json) {
     if(json[item].name == userName) {
       getIngredients()
       .then(ingredients => userGame(ingredients, json))
       exsistsInDb = true
+      localStorageSesh(userName)
     }
    };
     if(exsistsInDb == false) {
       return displayErrorMessage("Sign up to play the game!")
   };
 }
+
+localStorageSesh = (userName, ingredients, json) => {
+  if (window.localStorage) {
+  let reaccuringBob = localStorage.setItem('input', userName);
+
+  }
+}
+
 
 // This creates a new user when a user signs up
 userSignup = (name, score= 0) => {
@@ -154,7 +167,7 @@ userSignup = (name, score= 0) => {
       getIngredients()
       .then(ingredients => userGame(ingredients, json))
       // if (json.name == name) {
-       
+
       // }
       // else {
       //   displayErrorMessage("That username is already taken!")
@@ -165,14 +178,13 @@ userSignup = (name, score= 0) => {
 
 // This function login the user to the game
 userGame = (ingredients, json) => {
-  console.log(ingredients, json)
 // clearing the HTML
 document.body.style.backgroundImage = "url()";
 document.innerHTML = '';
 const main = document.getElementById('main-wrapper')
 main.innerHTML = '';
 
-// for (i = 0; i < ingredients.length; i++) { 
+// for (i = 0; i < ingredients.length; i++) {
 //   console.log(ingredients[i])
 // }
 
@@ -342,7 +354,7 @@ closeNav = () => {
 // var inputStyles = "background:none;border-color:#888;border-width:0 0 1px 0;width:100%;color:#fff;padding:5px;margin:5px;",
 //     btnStyles = "background:red;border:none;width:100%;color:#fff;padding:5px;margin:5px;",
 //     forgetStyles = "color:#fff;",
-    
+
 //     i;
 
 // // set loginForm styles
@@ -351,7 +363,7 @@ closeNav = () => {
 
 // // set the elements and styles on the form
 // loginForm.innerHTML =
-//                  "<input type='text' placeholder='type username' style='"+ inputStyles +"' /><br/>" + 
+//                  "<input type='text' placeholder='type username' style='"+ inputStyles +"' /><br/>" +
 //                  "<input type='submit' value='Login' style='"+ btnStyles +"' />"
 
 // // set registerForm styles
@@ -361,7 +373,7 @@ closeNav = () => {
 
 // // set the elements and styles on the form
 // registerForm.innerHTML =
-// 			                 "<input type='text' placeholder='first name' style='"+ inputStyles +"' /><br/>" + 
+// 			                 "<input type='text' placeholder='first name' style='"+ inputStyles +"' /><br/>" +
 // 			                 "<input type='submit' value='Register' style='"+ btnStyles +"' />";
 
 // // append the bottons and form on main-div
@@ -373,4 +385,3 @@ closeNav = () => {
 // // append main-div on the body
 // document.body.appendChild(div);
 // }
-
