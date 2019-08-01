@@ -1,8 +1,8 @@
 html {
-  background-image: url(./images/loginBackgroung.jpg);
+  background-image: url(./images/bar.jpg);
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 120%;
+  background-size: 100%;
   font-family: 'Roboto', sans-serif;
 
 }
@@ -12,10 +12,12 @@ html {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 10px;
+  height: 95vh;
+  width: 100vw;
 }
 
 #main-wrapper {
-  background: rgba(0, 0, 0, 0.5);
+background: rgba(0, 0, 0, 0.5);
   text-align: center;
   display: grid;
   font-family: 'Roboto Slab', serif;
@@ -27,13 +29,17 @@ html {
 
 }
 
+/* #game-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
 .main-side {
   text-align: left;
   background: #5398A8;
   font-family: 'Roboto Slab', serif;
 
 }
-
 
 .visible {
   display: block;
@@ -45,7 +51,7 @@ html {
 
 #error-model {
   text-align: center;
-  
+
 }
 
 /*------------------ side nav stuff */
@@ -83,4 +89,64 @@ html {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+  }
+
+  .scrolling-wrapper {
+    background-color: blue;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    grid-row: 8/8;
+  }
+  .scrolling-wrapper .card {
+      display: inline-block;
+  }
+
+  .scrolling-wrapper-flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .scrolling-wrapper-flexbox .card {
+      flex: 0 0 auto;
+      margin-right: 3px;
+  }
+
+  .card {
+    border: 2px solid;
+    width: 150px;
+    height: 200px;
+    background: black;
+  }
+
+  .scrolling-wrapper, .scrolling-wrapper-flexbox {
+    /* height: 400px; */
+    margin-bottom: 20px;
+    /* width: 800px; */
+    -webkit-overflow-scrolling: touch;
+  }
+  .scrolling-wrapper {
+    grid-column: 1/-1;
+  }
+
+  .scrolling-wrapper div {
+   display: flex;
+   flex-direction: row;
+
+
+  }
+
+  .scrolling-wrapper div div img {
+    width: 150px;
+    padding: 5px;
+    margin: 5px;
+
+  }
+
+  .scrolling-wrapper div div h2 {
+    width: 10px;
+    font-size: 14px;
+    display: none;
+
   }
