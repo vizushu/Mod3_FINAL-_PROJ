@@ -268,7 +268,6 @@ closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
   }
 
-/* Create by Mohssine Aboutaj - 2017 */
 // create the elements
 let div = document.createElement('div'),
 		log = document.createElement('div'),
