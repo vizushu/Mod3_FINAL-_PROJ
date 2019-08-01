@@ -463,3 +463,31 @@ Processing by IngredientsController#index as */*
 Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/users" for ::1 at 2019-08-01 14:57:16 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/ingredients" for ::1 at 2019-08-01 14:57:16 -0700
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (1.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users" for ::1 at 2019-08-01 15:05:32 -0700
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5
+Completed 200 OK in 16ms (Views: 10.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/ingredients" for ::1 at 2019-08-01 15:05:33 -0700
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (1.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:5
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 1.3ms)
+
+

@@ -201,7 +201,7 @@ img.setAttribute("width", "70")
 img.setAttribute("height", "70")
 divIngredient.appendChild(img)
 
-// WE NEED A FUNCTION FOR DRAG AND DROP
+// This function is for drag and drop
 allowDrop = (ev) => {
   ev.preventDefault();
   }
