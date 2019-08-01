@@ -52,8 +52,7 @@
   }
 
   #main-wrapper {
-    background-color: lightblue;
-    position: left;
+    position: right;
     transition: margin-left 3450px;
     padding: 10px;
 
@@ -92,7 +91,7 @@ body {
   background-image: url(./images/loginBackgroung.jpg);
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 10% 10% 10%;
+  background-size: 120%;
 
 }
 
