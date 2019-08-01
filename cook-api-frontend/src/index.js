@@ -3,7 +3,7 @@ const USER_URL = `${BASE_URL}/users`
 const RECIPE_URL = `${BASE_URL}/recipes`
 const INGREDIENT_URL = `${BASE_URL}/ingredients`
 
-// Waiting for DOM to render login
+// Waiting for DOM to render login-------------------------------------->
 document.addEventListener('DOMContentLoaded', () => {
     localStorage.getItem('input') ?
     getUser().then(data => userLogin(data, localStorage.getItem('input')))
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(json => json)
   };
 
-// This is login form
+// This is login form--------------------------------------------------->
 loginPage = () => {
     const main = document.getElementById('main-wrapper')
     const div1 = document.createElement('div')
@@ -64,7 +64,7 @@ loginPage = () => {
   }
 
 
-// This is sign up form
+// This is sign up form------------------------------------------------->
 
 signUp = () => {
 const main = document.getElementById('main-wrapper')
@@ -97,7 +97,7 @@ form2.addEventListener("submit", (e) => {
   })
 }
 
-// this is the form function
+// this is the form function-------------------------------------------->
 formSwitcherSign = () => {
   let mainElement = document.getElementById('main-wrapper')
   let sButton = document.querySelector('.sign-in-button')
@@ -124,7 +124,7 @@ formSwitcherLogin = () => {
   })
 }
 
-// This is the show user function
+// This is the show user function--------------------------------------->
 userLogin = (json, userName) => {
   console.log(json)
   let exsistsInDb = false
@@ -149,7 +149,7 @@ localStorageSesh = (userName, ingredients, json) => {
 }
 
 
-// This creates a new user when a user signs up
+// This creates a new user when a user signs up------------------------->
 userSignup = (name, score= 0) => {
      fetch(USER_URL, {
       method: "POST",
@@ -176,7 +176,7 @@ userSignup = (name, score= 0) => {
   }
 
 
-// This function login the user to the game
+// This function login the user to the game----------------------------->
 userGame = (ingredients, json) => {
 // clearing the HTML
 document.body.style.backgroundImage = "url()";
@@ -219,7 +219,7 @@ img.setAttribute("height", "70")
 img.src = "https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/bento-box_1f371.png"
 divIngredient.appendChild(img)
 
-// WE NEED A FUNCTION FOR DRAG AND DROP
+//A FUNCTION FOR DRAG AND DROP------------------------------------------->
 allowDrop = (ev) => {
   ev.preventDefault();
   }
@@ -235,7 +235,7 @@ drop = (ev) => {
   }
 }
 
-// WE NEED A FUNCTION TO SHOW THE USER'S SCORE
+//A FUNCTION TO SHOW THE USER'S SCORE------------------------------------>
 // userScore = (json) => {
 //   // let currentScore = json.score
 //   let userScore = document.getElementById("pointCard")
@@ -249,7 +249,7 @@ drop = (ev) => {
 // WE NEED A FUNCTION TO SHOW CREATED RECIPE
 
 
-// This function just swaps the login/signup forms
+// This function just swaps the login/signup forms----------------------->
 switchLoginForm = (show, hide) => {
     show.className = "login"
     hide.className = "hidden"
@@ -265,7 +265,15 @@ switchLoginForm = (show, hide) => {
     })
   }
 
-// This function display the error message
+// This is the logout button function ----------------------------------->
+logoutButton = () => {
+  let logOut = document.getElementById("log-out")
+  logOut.addEventListener('click', () => {
+    
+  })
+}
+
+// This function display the error message------------------------------->
 displayErrorMessage = (message) => {
     const errorWrapper = document.querySelector('#error-model')
     const errorField = document.querySelector('#model-message')
@@ -289,7 +297,7 @@ displayErrorMessage = (message) => {
     }, 3000)
   }
 
-//Side navigation bar functions
+//Side navigation bar functions------------------------------------------>
 const closeButton = document.querySelector(".closebtn");
   closeButton.addEventListener("click", () => {
     closeNav();
