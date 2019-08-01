@@ -17,6 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
       .then(res => res.json())
       .then(json => json)
     };
+  
+  getIngredients = () => {
+    console.log('yoo')
+    return fetch(INGREDIENT_URL)
+    .then(res => res.json())
+    .then(json => json)
+  };
+    
 // This is login form
 loginPage = () => {
     const main = document.getElementById('main-wrapper')
@@ -97,8 +105,7 @@ formSwitcherSign = () => {
         mainElement.children[3].classList.add('visible')
         mainElement.children[3].classList.remove('hidden')
       }
-
-})
+  })
 }
 
 formSwitcherLogin = () => {
@@ -111,8 +118,7 @@ formSwitcherLogin = () => {
         mainElement.children[2].classList.add('visible')
         mainElement.children[2].classList.remove('hidden')
       }
-
-})
+  })
 }
 
 // This is the show user function
@@ -120,7 +126,8 @@ userLogin = (json, userName) => {
   let exsistsInDb = false
   for (var item in json) {
     if(json[item].name == userName) {
-      userGame(json)
+      getIngredients()
+      .then(ingredients => userGame(ingredients, json))
       exsistsInDb = true
     }
    };
@@ -144,29 +151,46 @@ userSignup = (name, score= 0) => {
     })
     .then(res => res.json())
     .then(json => {
-      if (json.name == name) {
-        userGame(json)
-      }
-      else {
-        displayErrorMessage("That username is already taken!")
-      }
+      getIngredients()
+      .then(ingredients => userGame(ingredients, json))
+      // if (json.name == name) {
+       
+      // }
+      // else {
+      //   displayErrorMessage("That username is already taken!")
+      // }
     })
   }
 
 
 // This function login the user to the game
-userGame = (json) => {
-document.getElementById('main-wrapper').innerHTML = '';
+userGame = (ingredients, json) => {
+  console.log(ingredients, json)
+// clearing the HTML
+document.body.style.backgroundImage = "url()";
+document.innerHTML = '';
 const main = document.getElementById('main-wrapper')
+main.innerHTML = '';
+
+// for (i = 0; i < ingredients.length; i++) { 
+//   console.log(ingredients[i])
+// }
+
+ingredients.forEach(element => {
+  let image = element.img_url
+  let name = element.name
+  let div = `<h2>${name}</h2><img src=${image}>`
+  let divTag = document.createElement('div')
+  divTag.innerHTML = div
+  main.appendChild(divTag)
+})
+
+
 const div = document.createElement('div')
-// const ul = document.createElement('ul')
-// const li = document.createElement('li')
 const divIngredient = document.createElement('div')
 
 main.appendChild(div)
 div.appendChild(divIngredient)
-// div.appendChild(ul)
-// ul.appendChild(li)
 
 const divDrop = document.createElement('div')
 divDrop.id = "divDrop"
@@ -209,8 +233,6 @@ drop = (ev) => {
 // WE NEED A FUNCTION TO SHOW TOP 5 USER'S SCORE
 
 // WE NEED A FUNCTION TO SHOW INGREDIENTS PICTURES
-
-
 
 // WE NEED A FUNCTION TO SHOW CREATED RECIPE
 
@@ -267,3 +289,88 @@ openNav = () => {
 closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
   }
+
+
+// Login = () => {
+// // create the elements
+// let div = document.createElement('div'),
+// 		log = document.createElement('div'),
+// 		reg = document.createElement('div'),
+// 		loginForm = document.createElement('form'),
+// 		registerForm = document.createElement('form');
+// div.id = 'loginDiv';
+
+// // set main-div styles
+// div.style.background = "rgba(0,0,0,0.5)";
+// div.style.width = '300px';
+// div.style.margin = '30px auto';
+// div.style.padding = '10px';
+// div.style.borderRadius = '10px';
+
+// log.style.display = 'inline-block';
+// log.style.color = '#fff';
+// log.style.margin = '5px';
+// log.style.cursor = 'pointer';
+
+// log.id = 'login';
+// log.innerHTML = 'login';
+
+// reg.style.display = 'inline-block';
+// reg.style.color = '#888';
+// reg.style.margin = '5px';
+// reg.style.cursor = 'pointer';
+// reg.id = 'register';
+// reg.innerHTML = 'register';
+
+// // hide register form and show login form
+// reg.onclick = function(){
+// 	this.style.color = '#fff';
+// 	log.style.color = '#888';
+// 	loginForm.style.display = 'none';
+// 	registerForm.style.display = 'block';
+// };
+
+// // hide login form and show register form
+// log.onclick = function(){
+// 	this.style.color = '#fff';
+// 	reg.style.color = '#888';
+// 	loginForm.style.display = 'block';
+// 	registerForm.style.display = 'none';
+// };
+
+// // create some variables for styling
+// var inputStyles = "background:none;border-color:#888;border-width:0 0 1px 0;width:100%;color:#fff;padding:5px;margin:5px;",
+//     btnStyles = "background:red;border:none;width:100%;color:#fff;padding:5px;margin:5px;",
+//     forgetStyles = "color:#fff;",
+    
+//     i;
+
+// // set loginForm styles
+// loginForm.style.margin = '50px 20px 20px 20px';
+// loginForm.id = 'loginForm';
+
+// // set the elements and styles on the form
+// loginForm.innerHTML =
+//                  "<input type='text' placeholder='type username' style='"+ inputStyles +"' /><br/>" + 
+//                  "<input type='submit' value='Login' style='"+ btnStyles +"' />"
+
+// // set registerForm styles
+// registerForm.style.margin = '50px 20px 20px 20px';
+// registerForm.style.display = 'none';
+// registerForm.id = 'registerForm';
+
+// // set the elements and styles on the form
+// registerForm.innerHTML =
+// 			                 "<input type='text' placeholder='first name' style='"+ inputStyles +"' /><br/>" + 
+// 			                 "<input type='submit' value='Register' style='"+ btnStyles +"' />";
+
+// // append the bottons and form on main-div
+// div.appendChild(log);
+// div.appendChild(reg);
+// div.appendChild(loginForm);
+// div.appendChild(registerForm);
+
+// // append main-div on the body
+// document.body.appendChild(div);
+// }
+
