@@ -172,10 +172,6 @@ document.innerHTML = '';
 const main = document.getElementById('main-wrapper')
 main.innerHTML = '';
 
-// for (i = 0; i < ingredients.length; i++) { 
-//   console.log(ingredients[i])
-// }
-
 ingredients.forEach(element => {
   let image = element.img_url
   let name = element.name
