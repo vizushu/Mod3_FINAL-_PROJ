@@ -126,14 +126,13 @@ formSwitcherLogin = () => {
 
 // This is the show user function--------------------------------------->
 userLogin = (json, userName) => {
-  console.log(json)
   let exsistsInDb = false
   for (var item in json) {
     if(json[item].name == userName) {
       getIngredients()
       .then(ingredients => userGame(ingredients, json))
       exsistsInDb = true
-      localStorageSesh(userName)
+      // localStorageSesh(userName)
     }
    };
     if(exsistsInDb == false) {
@@ -141,12 +140,12 @@ userLogin = (json, userName) => {
   };
 }
 
-localStorageSesh = (userName, ingredients, json) => {
-  if (window.localStorage) {
-  let reaccuringBob = localStorage.setItem('input', userName);
-
-  }
-}
+// localStorageSesh = (userName, ingredients, json) => {
+//   if (window.localStorage) {
+//   let reaccuringBob = localStorage.setItem('input', userName);
+//
+//   }
+// }
 
 
 // This creates a new user when a user signs up------------------------->
@@ -176,9 +175,9 @@ userSignup = (name, score= 0) => {
 
 
 // This function login the user to the game----------------------------->
-userGame = (ingredients, json) => {  
-  let loginPage = document.getElementById("main-wrapper")
-   loginPage.outerHTML = ' ';
+userGame = (ingredients, json) => {
+  // let loginPage = document.getElementById("main-wrapper")
+  //  loginPage.outerHTML = ' ';
 
 const body = document.querySelector('body')
 const mainDiv = document.createElement('div')
@@ -191,6 +190,7 @@ outerDiv.appendChild(main)
 
 ingredients.forEach(element => {
   let img = element.img_url
+  console.log(img)
   let name = element.name
   let div = `<h2>${name}</h2><img src=${img}>`
   let divTag = document.createElement('div')
@@ -264,19 +264,20 @@ switchLoginForm = (show, hide) => {
   }
 
 // This is the logout button function ----------------------------------->
-logoutButton = () => {
-  let logOut = document.getElementById("log-out")
-  logOut.addEventListener('click', () => {
-
-  })
-}
+// logoutButton = () => {
+//   let logOut = document.getElementById("log-out")
+//   logOut.addEventListener('click', () => {
+//       localStorageSesh(userName, ingredients, json)
+//       localStorage.clear()
+//   })
+// }
 
 // This function display the error message------------------------------->
 displayErrorMessage = (message) => {
     const errorWrapper = document.querySelector('#error-model')
     const errorField = document.querySelector('#model-message')
     const close = document.querySelector('.close')
-    errorField.textContent = message
+    errorField.innerText = message
     errorWrapper.style.display = 'block'
 
     close.onclick = () => {
